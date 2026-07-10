@@ -1,0 +1,14 @@
+export const words = [
+  { word: 'necessary', phonetic: '/ˈnesəseri/', meaning: { zh: '必要的；必需的', ja: '必要な；欠かせない' }, example: 'It is necessary to practice every day.', tip: { zh: '一个 c，两个 s：ne-ce-ss-ary。', ja: 'c は1つ、s は2つ：ne-ce-ss-ary。' }, level: 'basic' },
+  { word: 'environment', phonetic: '/ɪnˈvaɪrənmənt/', meaning: { zh: '环境；周围状况', ja: '環境；周囲の状況' }, example: 'A quiet environment helps me focus.', tip: { zh: '中间不要漏掉 n：environ + ment。', ja: '途中の n を忘れずに：environ + ment。' }, level: 'basic' },
+  { word: 'fascinating', phonetic: '/ˈfæsɪneɪtɪŋ/', meaning: { zh: '极有吸引力的', ja: 'とても魅力的な；興味深い' }, example: 'The documentary was fascinating.', tip: { zh: '来自 fascinate，s 后面还有一个 c。', ja: 'fascinate が語源。s の後に c が入ります。' }, level: 'advanced' },
+  { word: 'consequence', phonetic: '/ˈkɒnsɪkwens/', meaning: { zh: '结果；后果', ja: '結果；影響' }, example: 'Every decision has a consequence.', tip: { zh: '把 sequence 整体放进 con-sequence。', ja: 'sequence をそのまま入れて con-sequence。' }, level: 'advanced' },
+  { word: 'accommodate', phonetic: '/əˈkɒmədeɪt/', meaning: { zh: '容纳；适应；提供住宿', ja: '収容する；適応させる；宿泊させる' }, example: 'The room can accommodate six people.', tip: { zh: '双 c 加双 m：ac-com-modate。', ja: 'c も m も2つ：ac-com-modate。' }, level: 'challenge' },
+  { word: 'recommend', phonetic: '/ˌrekəˈmend/', meaning: { zh: '推荐；建议', ja: '勧める；推薦する' }, example: 'I recommend this book to beginners.', tip: { zh: '一个 c，两个 m：re-com-mend。', ja: 'c は1つ、m は2つ：re-com-mend。' }, level: 'basic' },
+  { word: 'pronunciation', phonetic: '/prəˌnʌnsiˈeɪʃən/', meaning: { zh: '发音', ja: '発音' }, example: 'Her pronunciation is very clear.', tip: { zh: '不是 pronounciation：这里没有第二个 o。', ja: 'pronounciation ではなく、2つ目の o はありません。' }, level: 'advanced' },
+  { word: 'separate', phonetic: '/ˈsepərət/', meaning: { zh: '分开的；使分开', ja: '別々の；分ける' }, example: 'Keep the two ideas separate.', tip: { zh: '中间是 par：se-par-ate。', ja: '真ん中は par：se-par-ate。' }, level: 'basic' },
+  { word: 'achievement', phonetic: '/əˈtʃiːvmənt/', meaning: { zh: '成就；成绩', ja: '達成；成果' }, example: 'Finishing the course was a real achievement.', tip: { zh: 'i 在 e 前：achieve + ment。', ja: 'i が e より前：achieve + ment。' }, level: 'advanced' },
+  { word: 'embarrassed', phonetic: '/ɪmˈbærəst/', meaning: { zh: '尴尬的；窘迫的', ja: '恥ずかしい；きまりの悪い' }, example: 'I felt embarrassed by my mistake.', tip: { zh: '双 r、双 s：emba-rr-a-ss-ed。', ja: 'r も s も2つ：emba-rr-a-ss-ed。' }, level: 'challenge' },
+  { word: 'definitely', phonetic: '/ˈdefɪnətli/', meaning: { zh: '肯定地；当然', ja: '間違いなく；確実に' }, example: 'I will definitely try again.', tip: { zh: '来自 definite，不是 definately。', ja: 'definite が語源。definately ではありません。' }, level: 'advanced' },
+  { word: 'opportunity', phonetic: '/ˌɒpəˈtjuːnəti/', meaning: { zh: '机会；时机', ja: '機会；好機' }, example: 'This is a great opportunity to learn.', tip: { zh: '开头双 p：op-por-tunity。', ja: '最初の p は2つ：op-por-tunity。' }, level: 'basic' }
+];
