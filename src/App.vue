@@ -19,6 +19,20 @@
       <section class="intro"><p class="eyebrow">{{ t.eyebrow }}</p><h1>{{ t.titleStart }}<span>{{ t.titleAccent }}</span></h1><p>{{ t.subtitle }}</p></section>
       <section class="practice-area">
         <p class="section-label">{{ t.path }}</p>
+        <div class="dictionary-toolbar">
+          <label class="dictionary-select">
+            <span>{{ t.dictionary }}</span>
+            <select v-model="selectedDictionaryId" @change="changeDictionary">
+              <option v-for="dictionary in availableDictionaries" :key="dictionary.id" :value="dictionary.id">
+                {{ dictionaryName(dictionary) }} · {{ dictionary.words.length }} {{ t.wordUnit }}
+              </option>
+            </select>
+          </label>
+          <button class="import-button" type="button" @click="fileInput?.click()">{{ t.importJson }}</button>
+          <input ref="fileInput" class="visually-hidden" type="file" accept=".json,application/json" @change="handleImport" />
+        </div>
+        <p v-if="importMessage" class="import-message" role="status">{{ importMessage }}</p>
+        <p v-if="importError" class="import-message error" role="alert">{{ importError }}</p>
         <div class="practice-layout">
           <aside class="practice-rail" aria-label="Practice steps 1 and 2">
             <article class="step-card"><b>01</b><span>Listen</span><p>{{ t.step1 }}</p></article>
@@ -42,11 +56,11 @@
           <div class="result-icon">{{ result === 'correct' ? '✓' : '×' }}</div>
           <p class="result-kicker">{{ result === 'correct' ? t.correct : errorMessage }}</p>
           <div class="word-result" :aria-label="`${t.correctSpelling} ${current.word}`"><span v-for="(part, i) in diff" :key="i" :class="part.type">{{ part.char }}</span></div>
-          <p class="phonetic">{{ current.phonetic }}</p>
+          <p v-if="current.phonetic" class="phonetic">{{ current.phonetic }}</p>
           <div class="learning-panel">
-            <div><span class="panel-label">{{ t.meaning }}</span><strong>{{ current.meaning[locale] }}</strong></div>
-            <div><span class="panel-label">{{ t.tip }}</span><p>{{ current.tip[locale] }}</p></div>
-            <div><span class="panel-label">{{ t.example }}</span><p>{{ current.example }}</p></div>
+            <div><span class="panel-label">{{ t.meaning }}</span><strong>{{ currentMeaning }}</strong></div>
+            <div v-if="currentTip"><span class="panel-label">{{ t.tip }}</span><p>{{ currentTip }}</p></div>
+            <div v-if="current.example"><span class="panel-label">{{ t.example }}</span><p>{{ current.example }}</p></div>
           </div>
           <button class="primary next-button" type="button" @click="next">{{ isLast ? t.restart : t.next }} <span>→</span></button>
         </div>
@@ -64,7 +78,7 @@
 
 <script setup>
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
-import { words } from './data/words'
+import { dictionaries, words } from './data/words'
 
 const copy = {
   zh: {
@@ -74,7 +88,8 @@ const copy = {
     playAria: '播放单词发音', listen: '点击播放 · 听清楚这个词', slowOn: '慢速已开', slowOff: '慢速播放',
     answerLabel: '写下你听到的单词', placeholder: 'Type what you hear', skip: '跳过', check: '检查拼写',
     correct: '拼对了！', correctSpelling: '正确拼写', meaning: '意思', tip: '记忆提示', example: '例句',
-    restart: '重新练习', next: '下一个单词', path: '你的练习路径',
+    restart: '重新练习', next: '下一个单词', path: '你的练习路径', dictionary: '当前词库', importJson: '导入 JSON', wordUnit: '词',
+    imported: '已导入', invalidImport: '无法导入：请选择包含 words 数组的有效 JSON 词库。',
     step1: '先用耳朵认识它', step2: '自己写出拼写', step3: '理解错误与含义', step4: '错词会再次出现',
     close: '很接近。', missing: '你漏掉了', position: '注意这些字母的位置', retry: '再听一次，注意每个音节。',
   },
@@ -85,7 +100,8 @@ const copy = {
     playAria: '英単語の発音を再生', listen: 'タップして、単語をよく聞こう', slowOn: 'ゆっくり再生中', slowOff: 'ゆっくり再生',
     answerLabel: '聞こえた英単語を入力してください', placeholder: '聞こえた単語を入力', skip: 'スキップ', check: 'スペルを確認',
     correct: '正解！', correctSpelling: '正しいスペル', meaning: '意味', tip: '覚え方', example: '例文',
-    restart: 'もう一度練習', next: '次の単語', path: '学習の流れ',
+    restart: 'もう一度練習', next: '次の単語', path: '学習の流れ', dictionary: '単語帳', importJson: 'JSONを読み込む', wordUnit: '語',
+    imported: '読み込み完了', invalidImport: '読み込めません。有効な words 配列を含む JSON を選択してください。',
     step1: 'まず耳で単語を知る', step2: '自分でスペルを書く', step3: '間違いと意味を理解', step4: '苦手な単語をもう一度',
     close: 'もう少しです。', missing: '抜けている文字', position: '文字の位置に注意', retry: 'もう一度聞いて、音節を意識しましょう。',
   },
@@ -104,14 +120,24 @@ const totalCount = ref(0)
 const legacyMistakes = localStorage.getItem('sound2spell-mistakes')
 const mistakes = ref(JSON.parse(localStorage.getItem('echospell-mistakes') || legacyMistakes || '[]'))
 const input = ref(null)
+const fileInput = ref(null)
 const slowMode = ref(false)
 const sessionMode = ref('all')
+const customDictionary = ref(readStoredDictionary())
+const selectedDictionaryId = ref(localStorage.getItem('echospell-dictionary') || 'cet4-high-frequency')
+const importMessage = ref('')
+const importError = ref('')
 
-const current = computed(() => shuffled.value[index.value] || words[0])
+const availableDictionaries = computed(() => customDictionary.value ? [...dictionaries, customDictionary.value] : dictionaries)
+const activeDictionary = computed(() => availableDictionaries.value.find(item => item.id === selectedDictionaryId.value) || dictionaries[0])
+const activeWords = computed(() => activeDictionary.value.words.map(normalizeWord).filter(Boolean))
+const current = computed(() => shuffled.value[index.value] || activeWords.value[0] || words[0])
 const progress = computed(() => shuffled.value.length ? ((index.value + (result.value === 'idle' ? 0 : 1)) / shuffled.value.length) * 100 : 0)
 const accuracy = computed(() => totalCount.value ? Math.round((correctCount.value / totalCount.value) * 100) : 0)
 const isLast = computed(() => index.value >= shuffled.value.length - 1)
-const levelLabel = computed(() => t.value[current.value.level])
+const levelLabel = computed(() => t.value[current.value.level] || t.value.basic)
+const currentMeaning = computed(() => localize(current.value.meaning) || '—')
+const currentTip = computed(() => localize(current.value.tip))
 
 watch(locale, value => {
   localStorage.setItem('echospell-locale', value)
@@ -121,10 +147,90 @@ watch(locale, value => {
 
 function shuffle(items) { return [...items].sort(() => Math.random() - 0.5) }
 
+function readStoredDictionary() {
+  try {
+    return JSON.parse(localStorage.getItem('echospell-custom-dictionary') || 'null')
+  } catch {
+    return null
+  }
+}
+
+function localize(value) {
+  if (!value) return ''
+  if (typeof value === 'string') return value
+  return value[locale.value] || value.zh || value.ja || Object.values(value)[0] || ''
+}
+
+function dictionaryName(dictionary) {
+  return localize(dictionary.name) || dictionary.id
+}
+
+function normalizeWord(item) {
+  const source = typeof item === 'string' ? { word: item } : item
+  if (!source || typeof source.word !== 'string') return null
+  const word = source.word.trim()
+  if (!word || !/^[A-Za-z][A-Za-z '\-]*$/.test(word)) return null
+  const meaning = typeof source.meaning === 'string' ? { zh: source.meaning } : (source.meaning || {})
+  const tip = typeof source.tip === 'string' ? { zh: source.tip } : (source.tip || {})
+  return {
+    word,
+    phonetic: source.phonetic || '',
+    meaning,
+    tip,
+    example: source.example || '',
+    level: ['basic', 'advanced', 'challenge'].includes(source.level) ? source.level : 'basic'
+  }
+}
+
+function changeDictionary() {
+  localStorage.setItem('echospell-dictionary', selectedDictionaryId.value)
+  importMessage.value = ''
+  importError.value = ''
+  startSession('all')
+}
+
+async function handleImport(event) {
+  importMessage.value = ''
+  importError.value = ''
+  const file = event.target.files?.[0]
+  if (!file) return
+
+  try {
+    const parsed = JSON.parse(await file.text())
+    const sourceWords = Array.isArray(parsed) ? parsed : parsed.words
+    if (!Array.isArray(sourceWords)) throw new Error('missing words')
+
+    const unique = new Map()
+    for (const item of sourceWords) {
+      const normalized = normalizeWord(item)
+      if (normalized) unique.set(normalized.word.toLowerCase(), normalized)
+    }
+    const importedWords = [...unique.values()]
+    if (!importedWords.length) throw new Error('empty words')
+
+    const imported = {
+      id: 'custom-import',
+      name: parsed.name || file.name.replace(/\.json$/i, ''),
+      description: parsed.description || '',
+      words: importedWords
+    }
+    customDictionary.value = imported
+    selectedDictionaryId.value = imported.id
+    localStorage.setItem('echospell-custom-dictionary', JSON.stringify(imported))
+    localStorage.setItem('echospell-dictionary', imported.id)
+    importMessage.value = `${t.value.imported} ${importedWords.length} ${t.value.wordUnit}`
+    startSession('all')
+  } catch {
+    importError.value = t.value.invalidImport
+  } finally {
+    event.target.value = ''
+  }
+}
+
 function startSession(mode = sessionMode.value) {
   sessionMode.value = mode
-  const pool = mode === 'mistakes' ? words.filter(item => mistakes.value.includes(item.word)) : words
-  shuffled.value = shuffle(pool.length ? pool : words)
+  const pool = mode === 'mistakes' ? activeWords.value.filter(item => mistakes.value.includes(item.word)) : activeWords.value
+  shuffled.value = shuffle(pool.length ? pool : activeWords.value)
   index.value = 0; answer.value = ''; result.value = 'idle'; streak.value = 0; correctCount.value = 0; totalCount.value = 0
   nextTick(() => input.value?.focus())
 }
@@ -195,6 +301,9 @@ const errorMessage = computed(() => {
 
 onMounted(() => {
   document.documentElement.lang = locale.value === 'ja' ? 'ja' : 'zh-CN'
+  if (!availableDictionaries.value.some(item => item.id === selectedDictionaryId.value)) {
+    selectedDictionaryId.value = 'cet4-high-frequency'
+  }
   startSession()
 })
 </script>

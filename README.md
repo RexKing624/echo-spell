@@ -132,6 +132,44 @@ npm run build
 - Web Speech API (`SpeechSynthesis`)
 - Local Storage
 
+## Import format · 导入格式 · インポート形式
+
+EchoSpell includes the cleaned CET-4 high-frequency dictionary in `src/data/cet4-high-frequency.json`. Users can also import their own JSON dictionary from the page.
+
+EchoSpell 已内置清洗后的四级高频词库 `src/data/cet4-high-frequency.json`，也支持用户从页面直接导入自己的 JSON 词库。
+
+EchoSpell には整理済みの中国大学英語四級頻出単語帳 `src/data/cet4-high-frequency.json` が含まれています。画面から自分の JSON 単語帳を読み込むこともできます。
+
+```json
+{
+  "name": {
+    "zh": "我的词库",
+    "ja": "マイ単語帳"
+  },
+  "words": [
+    {
+      "word": "environment",
+      "phonetic": "/ɪnˈvaɪrənmənt/",
+      "meaning": {
+        "zh": "环境",
+        "ja": "環境"
+      },
+      "example": "A quiet environment helps me focus.",
+      "tip": {
+        "zh": "不要漏掉中间的 n。",
+        "ja": "途中の n を忘れずに。"
+      }
+    }
+  ]
+}
+```
+
+Only `word` is required. `meaning`, `phonetic`, `example`, and `tip` are optional. An array such as `["apple", "banana"]` is also accepted.
+
+只有 `word` 是必填字段；其他字段均可省略。也可以直接导入 `["apple", "banana"]` 这样的数组。
+
+必須項目は `word` のみです。ほかの項目は省略できます。`["apple", "banana"]` のような配列も読み込めます。
+
 ## Project structure
 
 ```text

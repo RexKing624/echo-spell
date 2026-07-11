@@ -1,3 +1,5 @@
+import cet4HighFrequency from './cet4-high-frequency.json';
+
 export const words = [
   { word: 'necessary', phonetic: '/ˈnesəseri/', meaning: { zh: '必要的；必需的', ja: '必要な；欠かせない' }, example: 'It is necessary to practice every day.', tip: { zh: '一个 c，两个 s：ne-ce-ss-ary。', ja: 'c は1つ、s は2つ：ne-ce-ss-ary。' }, level: 'basic' },
   { word: 'environment', phonetic: '/ɪnˈvaɪrənmənt/', meaning: { zh: '环境；周围状况', ja: '環境；周囲の状況' }, example: 'A quiet environment helps me focus.', tip: { zh: '中间不要漏掉 n：environ + ment。', ja: '途中の n を忘れずに：environ + ment。' }, level: 'basic' },
@@ -11,4 +13,14 @@ export const words = [
   { word: 'embarrassed', phonetic: '/ɪmˈbærəst/', meaning: { zh: '尴尬的；窘迫的', ja: '恥ずかしい；きまりの悪い' }, example: 'I felt embarrassed by my mistake.', tip: { zh: '双 r、双 s：emba-rr-a-ss-ed。', ja: 'r も s も2つ：emba-rr-a-ss-ed。' }, level: 'challenge' },
   { word: 'definitely', phonetic: '/ˈdefɪnətli/', meaning: { zh: '肯定地；当然', ja: '間違いなく；確実に' }, example: 'I will definitely try again.', tip: { zh: '来自 definite，不是 definately。', ja: 'definite が語源。definately ではありません。' }, level: 'advanced' },
   { word: 'opportunity', phonetic: '/ˌɒpəˈtjuːnəti/', meaning: { zh: '机会；时机', ja: '機会；好機' }, example: 'This is a great opportunity to learn.', tip: { zh: '开头双 p：op-por-tunity。', ja: '最初の p は2つ：op-por-tunity。' }, level: 'basic' }
+];
+
+export const dictionaries = [
+  {
+    id: 'core-spelling',
+    name: { zh: '核心易错词', ja: 'スペル基礎単語' },
+    description: { zh: '内置的英语易错拼写示例词库。', ja: 'スペルを間違えやすい英単語の基本セットです。' },
+    words
+  },
+  cet4HighFrequency
 ];
