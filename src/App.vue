@@ -17,7 +17,15 @@
 
     <main>
       <section class="intro"><p class="eyebrow">{{ t.eyebrow }}</p><h1>{{ t.titleStart }}<span>{{ t.titleAccent }}</span></h1><p>{{ t.subtitle }}</p></section>
-      <section class="trainer-card" aria-live="polite">
+      <section class="practice-area">
+        <p class="section-label">{{ t.path }}</p>
+        <div class="practice-layout">
+          <aside class="practice-rail" aria-label="Practice steps 1 and 2">
+            <article class="step-card"><b>01</b><span>Listen</span><p>{{ t.step1 }}</p></article>
+            <article class="step-card"><b>02</b><span>Spell</span><p>{{ t.step2 }}</p></article>
+          </aside>
+
+          <section class="trainer-card" aria-live="polite">
         <div class="card-topline"><span class="counter">{{ index + 1 }} / {{ shuffled.length }}</span><span class="level">{{ levelLabel }}</span></div>
         <div class="progress-track"><span :style="{ width: `${progress}%` }"></span></div>
 
@@ -42,13 +50,15 @@
           </div>
           <button class="primary next-button" type="button" @click="next">{{ isLast ? t.restart : t.next }} <span>→</span></button>
         </div>
-      </section>
+          </section>
 
-      <section class="how-it-works"><p class="section-label">{{ t.path }}</p><div class="steps">
-        <div><b>01</b><span>Listen</span><p>{{ t.step1 }}</p></div><div><b>02</b><span>Spell</span><p>{{ t.step2 }}</p></div><div><b>03</b><span>Understand</span><p>{{ t.step3 }}</p></div><div><b>04</b><span>Remember</span><p>{{ t.step4 }}</p></div>
-      </div></section>
+          <aside class="practice-rail" aria-label="Practice steps 3 and 4">
+            <article class="step-card"><b>03</b><span>Understand</span><p>{{ t.step3 }}</p></article>
+            <article class="step-card"><b>04</b><span>Remember</span><p>{{ t.step4 }}</p></article>
+          </aside>
+        </div>
+      </section>
     </main>
-    <footer>{{ t.footer }}</footer>
   </div>
 </template>
 
@@ -66,7 +76,7 @@ const copy = {
     correct: '拼对了！', correctSpelling: '正确拼写', meaning: '意思', tip: '记忆提示', example: '例句',
     restart: '重新练习', next: '下一个单词', path: '你的练习路径',
     step1: '先用耳朵认识它', step2: '自己写出拼写', step3: '理解错误与含义', step4: '错词会再次出现',
-    footer: '为那些会念、但还不会写的学习者而做。', close: '很接近。', missing: '你漏掉了', position: '注意这些字母的位置', retry: '再听一次，注意每个音节。',
+    close: '很接近。', missing: '你漏掉了', position: '注意这些字母的位置', retry: '再听一次，注意每个音节。',
   },
   ja: {
     localeName: '日本語', brandAria: 'EchoSpell ホーム', streak: '連続正解', accuracy: '正解率', mistakes: '苦手',
@@ -77,7 +87,7 @@ const copy = {
     correct: '正解！', correctSpelling: '正しいスペル', meaning: '意味', tip: '覚え方', example: '例文',
     restart: 'もう一度練習', next: '次の単語', path: '学習の流れ',
     step1: 'まず耳で単語を知る', step2: '自分でスペルを書く', step3: '間違いと意味を理解', step4: '苦手な単語をもう一度',
-    footer: '読める。でも、まだ書けない。そんな学習者のために。', close: 'もう少しです。', missing: '抜けている文字', position: '文字の位置に注意', retry: 'もう一度聞いて、音節を意識しましょう。',
+    close: 'もう少しです。', missing: '抜けている文字', position: '文字の位置に注意', retry: 'もう一度聞いて、音節を意識しましょう。',
   },
 }
 
