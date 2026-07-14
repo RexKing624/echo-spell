@@ -49,11 +49,13 @@
           <div v-if="result === 'idle'" class="question-state">
             <button class="sound-button" type="button" :aria-label="t.playAria" @click="speak(slowMode)">
               <span class="sound-rings"><i></i><i></i><i></i></span>
-              <span class="play-icon"></span>
+              <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5.2v13.6L18.8 12 8 5.2Z" />
+              </svg>
             </button>
             <p class="listen-label">{{ t.listen }}</p>
             <button class="slow-toggle" :class="{ active: slowMode }" type="button" @click="toggleSlowMode">{{ slowMode ? t.slowOn : t.slowOff }}</button>
-            <p v-if="studyMode === 'learn'" class="learning-meaning"><span>{{ t.meaning }}</span><strong>{{ currentMeaning }}</strong></p>
+            <p class="learning-meaning"><span>{{ t.meaning }}</span><strong>{{ currentMeaning }}</strong></p>
             <label class="answer-label" for="answer">{{ t.answerLabel }}</label>
             <div class="answer-wrap">
               <div v-if="studyMode === 'learn'" class="guided-answer" aria-hidden="true">
@@ -71,20 +73,29 @@
           </div>
 
           <div v-else class="result-state" :class="result">
-            <div class="result-icon">{{ result === 'correct' ? '✓' : '×' }}</div>
-            <p class="result-kicker">{{ result === 'correct' ? t.correct : errorMessage }}</p>
-            <div class="word-result" :aria-label="`${t.correctSpelling} ${current.word}`"><span v-for="(part, i) in diff" :key="i" :class="part.type">{{ part.char }}</span></div>
-            <p v-if="current.phonetic" class="phonetic">{{ current.phonetic }}</p>
-            <div v-if="studyMode === 'learn'" class="learning-panel">
-              <div><span class="panel-label">{{ t.meaning }}</span><strong>{{ currentMeaning }}</strong></div>
-              <div v-if="currentTip"><span class="panel-label">{{ t.tip }}</span><p>{{ currentTip }}</p></div>
-              <div v-if="current.example"><span class="panel-label">{{ t.example }}</span><p>{{ current.example }}</p></div>
+            <div class="result-content">
+              <div class="result-icon">{{ result === 'correct' ? '✓' : '×' }}</div>
+              <p class="result-kicker">{{ result === 'correct' ? t.correct : errorMessage }}</p>
+              <div class="word-result" :aria-label="`${t.correctSpelling} ${current.word}`"><span v-for="(part, i) in diff" :key="i" :class="part.type">{{ part.char }}</span></div>
+              <p v-if="current.phonetic" class="phonetic">{{ current.phonetic }}</p>
+              <div v-if="studyMode === 'learn'" class="learning-panel">
+                <div><span class="panel-label">{{ t.meaning }}</span><strong>{{ currentMeaning }}</strong></div>
+                <div v-if="currentTip"><span class="panel-label">{{ t.tip }}</span><p>{{ currentTip }}</p></div>
+                <div v-if="current.example"><span class="panel-label">{{ t.example }}</span><p>{{ current.example }}</p></div>
+              </div>
             </div>
             <button class="primary next-button" type="button" @click="next">{{ isLast ? t.restart : t.next }} <span>→</span></button>
           </div>
         </section>
       </section>
     </main>
+    <footer class="site-footer">
+      <a href="https://github.com/RexKing624/echo-spell" target="_blank" rel="noreferrer">GitHub</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://xergnik.com" target="_blank" rel="noreferrer">xergnik.com</a>
+      <span aria-hidden="true">·</span>
+      <span>{{ t.footerLocation }}</span>
+    </footer>
   </div>
 </template>
 
@@ -104,7 +115,7 @@ const copy = {
     restart: '重新练习', next: '下一个单词', dictionary: '当前词库', importJson: '导入词库', wordUnit: '词',
     imported: '已导入', invalidImport: '无法识别有效词汇，请检查文件内容和格式。', legacyDoc: '旧版 .doc 暂时无法在浏览器中可靠读取，请先另存为 .docx 后再导入。', unsupportedFile: '暂不支持这种文件。可导入 JSON、CSV、TSV、TXT、Excel 或 DOCX。',
     unverifiedWarning: '用户导入词库 · 非 EchoSpell 内置，未经校验。拼写、释义和格式可能不准确，请自行核对。',
-    mode: '学习模式', learn: '学习', practice: '练习', backToLibrary: '回到词库练习', learningInstruction: ['照着浅色提示完整输入', '全部正确后会自动进入下一词'],
+    mode: '学习模式', learn: '学习', practice: '练习', backToLibrary: '回到词库练习', footerLocation: '© 2026 日本 / 东京', learningInstruction: ['照着浅色提示完整输入 全部正确后会自动进入下一词'],
     close: '很接近。', missing: '你漏掉了', position: '注意这些字母的位置', retry: '再听一次，注意每个音节。',
   },
   ja: {
@@ -117,7 +128,7 @@ const copy = {
     restart: 'もう一度練習', next: '次の単語', dictionary: '単語帳', importJson: '単語帳を読み込む', wordUnit: '語',
     imported: '読み込み完了', invalidImport: '有効な単語を認識できません。ファイルの内容と形式を確認してください。', legacyDoc: '旧形式の .doc はブラウザで正確に読み込めません。.docx 形式で保存してから読み込んでください。', unsupportedFile: 'この形式には未対応です。JSON、CSV、TSV、TXT、Excel、DOCXを利用できます。',
     unverifiedWarning: 'ユーザー読み込み単語帳 · EchoSpell 内蔵ではなく、未検証です。スペル・意味・形式を各自で確認してください。',
-    mode: '学習モード', learn: '学習', practice: '練習', backToLibrary: '単語帳練習に戻る', learningInstruction: ['薄い文字を見ながら最後まで入力', '正しく入力すると自動で次へ進みます'],
+    mode: '学習モード', learn: '学習', practice: '練習', backToLibrary: '単語帳練習に戻る', footerLocation: '© 2026 日本 / 東京', learningInstruction: ['薄い文字を見ながら最後まで入力 正しく入力すると自動で次へ進みます'],
     close: 'もう少しです。', missing: '抜けている文字', position: '文字の位置に注意', retry: 'もう一度聞いて、音節を意識しましょう。',
   },
 }
@@ -387,34 +398,37 @@ button, input { font: inherit; }
 button { cursor: pointer; }
 
 .app-shell { min-height: 100vh; background-image: radial-gradient(rgba(24,79,67,.08) 1px, transparent 1px); background-size: 24px 24px; }
-.topbar { height: 76px; display: flex; align-items: center; justify-content: space-between; padding: 0 max(24px, calc((100vw - 1120px) / 2)); border-bottom: 1px solid var(--line); background: rgba(244,240,232,.88); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 10; }
+.topbar { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 max(24px, calc((100vw - 1120px) / 2)); border-bottom: 1px solid var(--line); background: rgba(244,240,232,.88); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 10; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 700; font-size: 19px; }
-.brand-mark { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--green); color: white; font-family: 'Playfair Display', serif; }
+.brand-mark { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: var(--green); color: white; font-family: 'Playfair Display', serif; }
 .header-stats { display: flex; align-items: center; gap: 20px; font-size: 13px; color: #65716d; }
 .header-stats b { color: var(--ink); }
-.mistake-button { border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 9px 14px; color: var(--ink); }
+.mistake-button { border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 7px 13px; color: var(--ink); }
 .language-switch { display: flex; padding: 3px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.55); }
 .language-switch button { width: 28px; height: 28px; border: 0; border-radius: 50%; background: transparent; color: #65716d; font-size: 12px; font-weight: 700; }
 .language-switch button.active { background: var(--green); color: white; }
 main { width: min(100% - 48px, 1280px); margin: 0 auto; }
-.intro { text-align: center; padding: 76px 0 38px; }
+.intro { text-align: center; padding: 38px 0 24px; }
 .eyebrow { font-size: 11px; letter-spacing: .22em; font-weight: 700; color: var(--orange); }
-.intro h1 { margin: 12px 0 10px; font-family: 'Playfair Display', 'Noto Sans SC', serif; font-size: clamp(45px, 7vw, 78px); line-height: 1; letter-spacing: -.04em; }
+.intro h1 { margin: 10px 0 8px; font-family: 'Playfair Display', 'Noto Sans SC', serif; font-size: clamp(38px, 5.4vw, 62px); line-height: 1; letter-spacing: -.04em; }
 .intro h1 span { color: var(--green); font-style: italic; }
-.intro > p:last-child { color: #63706b; margin: 18px 0 0; }
-.practice-area { padding-bottom: 84px; text-align: center; }
-.dictionary-toolbar { max-width: 680px; margin: 0 auto 20px; display: flex; align-items: end; justify-content: center; gap: 10px; }
+.intro > p:last-child { color: #63706b; margin: 12px 0 0; }
+.practice-area { padding-bottom: 34px; text-align: center; }
+.site-footer { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 0 24px 26px; color: #7b8581; font-size: 13px; }
+.site-footer a { color: inherit; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+.site-footer a:hover { color: var(--green); }
+.dictionary-toolbar { max-width: 620px; margin: 0 auto 16px; display: flex; align-items: end; justify-content: center; gap: 10px; }
 .dictionary-select { flex: 1; text-align: left; }
 .dictionary-select > span { display: block; margin: 0 0 6px 3px; color: #68736f; font-size: 11px; font-weight: 700; letter-spacing: .08em; }
-.dictionary-select select { width: 100%; min-height: 44px; padding: 0 38px 0 13px; border: 1px solid var(--line); border-radius: 11px; background: rgba(255,253,248,.8); color: var(--ink); font: inherit; outline: none; }
+.dictionary-select select { width: 100%; min-height: 40px; padding: 0 36px 0 13px; border: 1px solid var(--line); border-radius: 11px; background: rgba(255,253,248,.8); color: var(--ink); font: inherit; outline: none; }
 .dictionary-select select:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(24,79,67,.1); }
-.import-button { min-height: 44px; padding: 0 16px; border: 1px solid var(--green); border-radius: 11px; background: transparent; color: var(--green); font-weight: 700; white-space: nowrap; }
+.import-button { min-height: 40px; padding: 0 16px; border: 1px solid var(--green); border-radius: 11px; background: transparent; color: var(--green); font-weight: 700; white-space: nowrap; }
 .import-button:hover { background: rgba(24,79,67,.07); }
 .import-message { max-width: 680px; margin: -8px auto 18px; color: var(--green); font-size: 12px; }
 .import-message.error { color: #a13e2b; }
 .custom-warning { max-width: 680px; margin: -8px auto 18px; padding: 10px 13px; border: 1px solid rgba(190,120,28,.28); border-radius: 10px; background: #fff6df; color: #81550d; font-size: 12px; line-height: 1.55; text-align: left; }
 .visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; border: 0 !important; }
-.trainer-card { width: min(100%, 680px); height: 680px; margin: 0 auto; display: flex; flex-direction: column; background: #fffdf8; border: 1px solid rgba(29,41,37,.16); border-radius: 24px; padding: 24px 30px 30px; box-shadow: 0 22px 60px rgba(48,47,38,.09); }
+.trainer-card { width: min(100%, 620px); height: 590px; margin: 0 auto; display: flex; flex-direction: column; background: #fffdf8; border: 1px solid rgba(29,41,37,.16); border-radius: 22px; padding: 20px 26px 24px; box-shadow: 0 18px 46px rgba(48,47,38,.08); }
 .card-topline { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #77817d; }
 .card-tools { display: flex; align-items: center; justify-content: flex-end; gap: 14px; }
 .card-meta { display: flex; align-items: center; gap: 10px; }
@@ -425,33 +439,34 @@ main { width: min(100% - 48px, 1280px); margin: 0 auto; }
 .mode-switch button.active { background: var(--green); color: white; box-shadow: 0 2px 8px rgba(24,79,67,.16); }
 .level { background: #e7efe9; color: var(--green); padding: 5px 10px; border-radius: 999px; font-weight: 600; }
 .level.mistakes { background: #fff0e8; color: var(--orange); }
-.progress-track { height: 3px; background: #e8e7e0; margin: 14px 0 22px; overflow: hidden; border-radius: 3px; }
+.progress-track { height: 3px; background: #e8e7e0; margin: 12px 0 0; overflow: hidden; border-radius: 3px; }
 .progress-track span { display: block; height: 100%; background: var(--orange); transition: width .35s ease; }
-.question-state { flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; overflow-y: auto; }
-.sound-button { width: 104px; height: 104px; margin-top: 30px; border: 0; border-radius: 50%; color: white; background: var(--green); position: relative; display: grid; place-items: center; box-shadow: 0 12px 32px rgba(24,79,67,.18); transition: transform .2s; }
+.question-state { flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; padding-top: 38px; overflow-y: auto; }
+.sound-button { flex: 0 0 auto; width: 88px; height: 88px; min-width: 88px; min-height: 88px; margin-top: 0; border: 0; border-radius: 50%; color: white; background: var(--green); position: relative; display: grid; place-items: center; box-shadow: 0 10px 26px rgba(24,79,67,.18); transition: transform .2s; }
 .sound-button:hover { transform: scale(1.04); }
 .sound-button:active { transform: scale(.97); }
-.play-icon { width: 0; height: 0; margin-left: 6px; border-top: 15px solid transparent; border-bottom: 15px solid transparent; border-left: 24px solid white; margin-top: -40px}
+.play-icon { width: 45px; height: 45px; transform: translateX(2px); margin-top: -40px;}
+.play-icon path { fill: white; }
 .sound-rings i { position: absolute; inset: -1px; border: 1px solid rgba(24,79,67,.12); border-radius: 50%; }
-.sound-rings i:nth-child(2) { inset: -10px; }
-.sound-rings i:nth-child(3) { inset: -19px; }
-.listen-label { margin: 24px 0 8px; font-size: 18px; color: #66716d; }
-.slow-toggle { border: 0; background: transparent; color: var(--green); font-size: 16px; font-weight: 600; padding: 6px 10px; }
+.sound-rings i:nth-child(2) { inset: -8px; }
+.sound-rings i:nth-child(3) { inset: -16px; }
+.listen-label { margin: 18px 0 6px; font-size: 16px; color: #66716d; }
+.slow-toggle { border: 0; background: transparent; color: var(--green); font-size: 15px; font-weight: 600; padding: 5px 10px; }
 .slow-toggle.active { color: var(--orange); }
-.learning-meaning { width: 100%; margin: 18px 0 0; padding: 16px 18px; border-radius: 12px; background: #f3f0e8; color: #4d5a55; font-size: 16px; line-height: 1.65; text-align: left; }
+.learning-meaning { width: 100%; margin: 14px 0 0; padding: 12px 16px; border-radius: 12px; background: #f3f0e8; color: #4d5a55; font-size: 15px; line-height: 1.55; text-align: left; }
 .learning-meaning span { display: block; margin-bottom: 4px; color: #7a8580; font-size: 12px; font-weight: 700; letter-spacing: .12em; }
-.learning-meaning strong { color: var(--ink); font-size: 18px; }
-.answer-label { align-self: stretch; font-size: 18px; font-weight: 600; margin: 26px 0 8px; text-align: center; }
+.learning-meaning strong { color: var(--ink); font-size: 17px; }
+.answer-label { align-self: stretch; font-size: 16px; font-weight: 600; margin: 18px 0 7px; text-align: center; }
 .answer-wrap { position: relative; width: 100%; }
-.answer-input { width: 100%; background: #f7f5ef; border: 1px solid #d9d9d1; border-radius: 12px; padding: 18px 20px; font-size: 28px; letter-spacing: .16em; color: var(--ink); outline: none; text-align: center; }
+.answer-input { width: 100%; background: #f7f5ef; border: 1px solid #d9d9d1; border-radius: 12px; padding: 14px 18px; font-size: 24px; letter-spacing: .14em; color: var(--ink); caret-color: transparent; outline: none; text-align: center; }
 .answer-input:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(24,79,67,.1); }
 .answer-input::placeholder { color: #a6aaa6; letter-spacing: 0; font-size: 17px; }
-.guided-answer { position: absolute; inset: 0; z-index: 1; display: flex; align-items: center; justify-content: center; padding: 18px 20px; color: var(--ink); font-size: 28px; letter-spacing: .16em; pointer-events: none; white-space: pre; }
+.guided-answer { position: absolute; inset: 0; z-index: 1; display: flex; align-items: center; justify-content: center; padding: 14px 18px; color: var(--ink); font-size: 24px; letter-spacing: .14em; pointer-events: none; white-space: pre; }
 .guided-typed { color: var(--ink); }
 .guided-wrong { color: #d84b32; font-weight: 700; }
 .guided-remainder { color: rgba(24,79,67,.25); }
 .answer-input.learning-input { position: relative; z-index: 2; background: transparent; color: transparent; caret-color: transparent; }
-.learning-instruction { align-self: stretch; margin: 10px 0 0; color: #7a8580; font-size: 16px; line-height: 1.55; text-align: center; }
+.learning-instruction { align-self: stretch; margin: 8px 0 0; color: #7a8580; font-size: 15px; line-height: 1.5; text-align: center; white-space: nowrap; }
 .learning-instruction span { display: block; }
 .learning-skip { margin-top: auto; padding: 11px 18px; border: 0; background: transparent; color: #76807c; font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
 .actions { display: grid; grid-template-columns: 1fr 2fr; gap: 10px; width: 100%; margin-top: auto; padding-top: 22px; }
@@ -461,6 +476,7 @@ main { width: min(100% - 48px, 1280px); margin: 0 auto; }
 .primary span { margin-left: 10px; opacity: .7; }
 .secondary { background: transparent; color: var(--green); }
 .result-state { flex: 1; min-height: 0; display: flex; flex-direction: column; text-align: center; overflow-y: auto; animation: appear .3s ease; }
+.result-content { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; padding: 10px 0 20px; }
 .result-icon { width: 52px; height: 52px; margin: 0 auto 14px; border-radius: 50%; display: grid; place-items: center; font-size: 28px; font-weight: 600; }
 .correct .result-icon { color: var(--green); background: var(--mint); }
 .wrong .result-icon { color: #a13e2b; background: #f8d8cc; }
@@ -486,23 +502,25 @@ main { width: min(100% - 48px, 1280px); margin: 0 auto; }
   .header-stats { gap: 8px; }
   .brand { font-size: 16px; }
   .brand-mark { width: 32px; height: 32px; }
-  .intro { padding: 54px 0 28px; }
-  .intro h1 { font-size: 48px; }
-  .trainer-card { height: 640px; padding: 20px 18px 22px; border-radius: 20px; }
+  .intro { padding: 34px 0 22px; }
+  .intro h1 { font-size: 42px; }
+  .trainer-card { height: 590px; padding: 18px 16px 20px; border-radius: 20px; }
   .card-topline { align-items: flex-start; gap: 10px; }
   .card-tools { flex-direction: column; align-items: flex-end; gap: 5px; }
   .card-meta { flex-direction: column-reverse; align-items: flex-end; gap: 4px; }
   .back-to-library { font-size: 12px; }
   .mode-switch button { min-width: 50px; padding: 0 8px; }
-  .practice-area { padding-bottom: 48px; }
+  .practice-area { padding-bottom: 34px; }
+  .site-footer { padding-bottom: 28px; font-size: 12px; }
   .dictionary-toolbar { align-items: stretch; flex-direction: column; }
   .import-button { width: 100%; }
-  .progress-track { margin-bottom: 22px; }
-  .sound-button { width: 92px; height: 92px; }
-  .play-icon { margin-left: 5px; border-top-width: 13px; border-bottom-width: 13px; border-left-width: 21px; }
+  .progress-track { margin-bottom: 0; }
+  .question-state { padding-top: 32px; }
+  .sound-button { width: 78px; height: 78px; min-width: 78px; min-height: 78px; margin-top: 0; }
+  .play-icon { width: 26px; height: 26px; transform: translateX(2px); }
   .listen-label, .answer-label { font-size: 16px; }
   .slow-toggle, .learning-instruction { font-size: 15px; }
-  .answer-input, .guided-answer { font-size: 24px; letter-spacing: .12em; }
+  .answer-input, .guided-answer { font-size: 22px; letter-spacing: .1em; }
   .actions { grid-template-columns: 1fr; }
   .actions .secondary { order: 2; }
   .learning-panel > div { grid-template-columns: 1fr; gap: 3px; }
