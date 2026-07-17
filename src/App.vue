@@ -40,6 +40,9 @@
               <button :class="{ active: studyMode === 'practice' }" type="button" @click="setStudyMode('practice')">{{ t.practice }}</button>
             </div>
             <div class="card-tools">
+              <button class="meaning-toggle" :class="{ active: showMeaning }" type="button" @click="toggleMeaning">
+                {{ showMeaning ? t.hideMeaning : t.showMeaning }}
+              </button>
               <button v-if="sessionMode === 'mistakes'" class="back-to-library" type="button" @click="startSession('all')">{{ t.backToLibrary }}</button>
               <div class="card-meta"><span class="counter">{{ index + 1 }} / {{ shuffled.length }}</span><span class="level" :class="{ mistakes: sessionMode === 'mistakes' }">{{ levelLabel }}</span></div>
             </div>
@@ -55,7 +58,7 @@
             </button>
             <p class="listen-label">{{ t.listen }}</p>
             <button class="slow-toggle" :class="{ active: slowMode }" type="button" @click="toggleSlowMode">{{ slowMode ? t.slowOn : t.slowOff }}</button>
-            <p class="learning-meaning"><span>{{ t.meaning }}</span><strong>{{ currentMeaning }}</strong></p>
+            <p class="learning-meaning" :class="{ hidden: !showMeaning }" :aria-hidden="!showMeaning"><span>{{ t.meaning }}</span><strong>{{ currentMeaning }}</strong></p>
             <label class="answer-label" for="answer">{{ t.answerLabel }}</label>
             <div class="answer-wrap">
               <div v-if="studyMode === 'learn'" class="guided-answer" aria-hidden="true">
@@ -78,7 +81,7 @@
               <p class="result-kicker">{{ result === 'correct' ? t.correct : errorMessage }}</p>
               <div class="word-result" :aria-label="`${t.correctSpelling} ${current.word}`"><span v-for="(part, i) in diff" :key="i" :class="part.type">{{ part.char }}</span></div>
               <p v-if="current.phonetic" class="phonetic">{{ current.phonetic }}</p>
-              <div v-if="studyMode === 'learn'" class="learning-panel">
+              <div v-if="studyMode === 'learn' && showMeaning" class="learning-panel">
                 <div><span class="panel-label">{{ t.meaning }}</span><strong>{{ currentMeaning }}</strong></div>
                 <div v-if="currentTip"><span class="panel-label">{{ t.tip }}</span><p>{{ currentTip }}</p></div>
                 <div v-if="current.example"><span class="panel-label">{{ t.example }}</span><p>{{ current.example }}</p></div>
@@ -115,7 +118,7 @@ const copy = {
     restart: '重新练习', next: '下一个单词', dictionary: '当前词库', importJson: '导入词库', wordUnit: '词',
     imported: '已导入', invalidImport: '无法识别有效词汇，请检查文件内容和格式。', legacyDoc: '旧版 .doc 暂时无法在浏览器中可靠读取，请先另存为 .docx 后再导入。', unsupportedFile: '暂不支持这种文件。可导入 JSON、CSV、TSV、TXT、Excel 或 DOCX。',
     unverifiedWarning: '用户导入词库 · 非 EchoSpell 内置，未经校验。拼写、释义和格式可能不准确，请自行核对。',
-    mode: '学习模式', learn: '学习', practice: '练习', backToLibrary: '回到词库练习', footerLocation: '© 2026 日本 / 东京', learningInstruction: ['照着浅色提示完整输入 全部正确后会自动进入下一词'],
+    mode: '学习模式', learn: '学习', practice: '练习', showMeaning: '显示意思', hideMeaning: '隐藏意思', backToLibrary: '回到词库练习', footerLocation: '© 2026 日本 / 东京', learningInstruction: ['照着浅色提示完整输入 全部正确后会自动进入下一词'],
     close: '很接近。', missing: '你漏掉了', position: '注意这些字母的位置', retry: '再听一次，注意每个音节。',
   },
   ja: {
@@ -128,7 +131,7 @@ const copy = {
     restart: 'もう一度練習', next: '次の単語', dictionary: '単語帳', importJson: '単語帳を読み込む', wordUnit: '語',
     imported: '読み込み完了', invalidImport: '有効な単語を認識できません。ファイルの内容と形式を確認してください。', legacyDoc: '旧形式の .doc はブラウザで正確に読み込めません。.docx 形式で保存してから読み込んでください。', unsupportedFile: 'この形式には未対応です。JSON、CSV、TSV、TXT、Excel、DOCXを利用できます。',
     unverifiedWarning: 'ユーザー読み込み単語帳 · EchoSpell 内蔵ではなく、未検証です。スペル・意味・形式を各自で確認してください。',
-    mode: '学習モード', learn: '学習', practice: '練習', backToLibrary: '単語帳練習に戻る', footerLocation: '© 2026 日本 / 東京', learningInstruction: ['薄い文字を見ながら最後まで入力 正しく入力すると自動で次へ進みます'],
+    mode: '学習モード', learn: '学習', practice: '練習', showMeaning: '意味を表示', hideMeaning: '意味を隠す', backToLibrary: '単語帳練習に戻る', footerLocation: '© 2026 日本 / 東京', learningInstruction: ['薄い文字を見ながら最後まで入力 正しく入力すると自動で次へ進みます'],
     close: 'もう少しです。', missing: '抜けている文字', position: '文字の位置に注意', retry: 'もう一度聞いて、音節を意識しましょう。',
   },
 }
@@ -149,6 +152,7 @@ const input = ref(null)
 const fileInput = ref(null)
 const slowMode = ref(false)
 const studyMode = ref(localStorage.getItem('echospell-mode') || 'learn')
+const showMeaning = ref(localStorage.getItem('echospell-show-meaning') !== 'false')
 const sessionMode = ref('all')
 const customDictionary = ref(readStoredDictionary())
 const selectedDictionaryId = ref(localStorage.getItem('echospell-dictionary') || 'cet4-high-frequency')
@@ -294,6 +298,11 @@ function toggleSlowMode() {
   speak(nextSlowMode)
 }
 
+function toggleMeaning() {
+  showMeaning.value = !showMeaning.value
+  localStorage.setItem('echospell-show-meaning', String(showMeaning.value))
+}
+
 function speak(slow = slowMode.value) {
   window.speechSynthesis.cancel()
   const utterance = new SpeechSynthesisUtterance(current.value.word)
@@ -432,6 +441,9 @@ main { width: min(100% - 48px, 1280px); margin: 0 auto; }
 .card-topline { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #77817d; }
 .card-tools { display: flex; align-items: center; justify-content: flex-end; gap: 14px; }
 .card-meta { display: flex; align-items: center; gap: 10px; }
+.meaning-toggle { border: 0; padding: 0; background: transparent; color: #76807c; font-size: 13px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.meaning-toggle.active { color: var(--green); }
+.meaning-toggle:hover { color: var(--orange); }
 .back-to-library { border: 0; padding: 0; background: transparent; color: var(--green); font-size: 13px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
 .back-to-library:hover { color: var(--orange); }
 .mode-switch { display: flex; padding: 3px; border: 1px solid var(--line); border-radius: 10px; background: #f3f1eb; }
@@ -454,6 +466,7 @@ main { width: min(100% - 48px, 1280px); margin: 0 auto; }
 .slow-toggle { border: 0; background: transparent; color: var(--green); font-size: 15px; font-weight: 600; padding: 5px 10px; }
 .slow-toggle.active { color: var(--orange); }
 .learning-meaning { width: 100%; margin: 14px 0 0; padding: 12px 16px; border-radius: 12px; background: #f3f0e8; color: #4d5a55; font-size: 15px; line-height: 1.55; text-align: left; }
+.learning-meaning.hidden { visibility: hidden; pointer-events: none; }
 .learning-meaning span { display: block; margin-bottom: 4px; color: #7a8580; font-size: 12px; font-weight: 700; letter-spacing: .12em; }
 .learning-meaning strong { color: var(--ink); font-size: 17px; }
 .answer-label { align-self: stretch; font-size: 16px; font-weight: 600; margin: 18px 0 7px; text-align: center; }
@@ -508,6 +521,7 @@ main { width: min(100% - 48px, 1280px); margin: 0 auto; }
   .card-topline { align-items: flex-start; gap: 10px; }
   .card-tools { flex-direction: column; align-items: flex-end; gap: 5px; }
   .card-meta { flex-direction: column-reverse; align-items: flex-end; gap: 4px; }
+  .meaning-toggle { font-size: 12px; }
   .back-to-library { font-size: 12px; }
   .mode-switch button { min-width: 50px; padding: 0 8px; }
   .practice-area { padding-bottom: 34px; }
