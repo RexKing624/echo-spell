@@ -16,11 +16,11 @@ export const words = [
 ];
 
 export const dictionaries = [
+  cet4HighFrequency,
   {
     id: 'core-spelling',
     name: { zh: '核心易错词', ja: 'スペル基礎単語' },
     description: { zh: '内置的英语易错拼写示例词库。', ja: 'スペルを間違えやすい英単語の基本セットです。' },
     words
-  },
-  cet4HighFrequency
+  }
 ];

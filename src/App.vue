@@ -161,6 +161,8 @@ const copy = {
 const savedLocale = localStorage.getItem('echospell-locale')
 const locale = ref(savedLocale || (navigator.language.startsWith('ja') ? 'ja' : 'zh'))
 const t = computed(() => copy[locale.value])
+const DEFAULT_DICTIONARY_ID = 'cet4-high-frequency'
+const DEFAULT_DICTIONARY_MIGRATION_KEY = 'echospell-default-dictionary-cet4'
 const shuffled = ref([])
 const index = ref(0)
 const answer = ref('')
@@ -178,12 +180,12 @@ const showMeaning = ref(localStorage.getItem('echospell-show-meaning') !== 'fals
 const showSyllables = ref(localStorage.getItem('echospell-show-syllables') === 'true')
 const sessionMode = ref('all')
 const customDictionary = ref(readStoredDictionary())
-const selectedDictionaryId = ref(localStorage.getItem('echospell-dictionary') || 'cet4-high-frequency')
+const selectedDictionaryId = ref(getInitialDictionaryId())
 const importMessage = ref('')
 const importError = ref('')
 
 const availableDictionaries = computed(() => customDictionary.value ? [...dictionaries, customDictionary.value] : dictionaries)
-const activeDictionary = computed(() => availableDictionaries.value.find(item => item.id === selectedDictionaryId.value) || dictionaries[0])
+const activeDictionary = computed(() => availableDictionaries.value.find(item => item.id === selectedDictionaryId.value) || dictionaries.find(item => item.id === DEFAULT_DICTIONARY_ID) || dictionaries[0])
 const activeWords = computed(() => activeDictionary.value.words.map(normalizeWord).filter(Boolean))
 const current = computed(() => shuffled.value[index.value] || activeWords.value[0] || words[0])
 const progress = computed(() => shuffled.value.length ? ((index.value + (result.value === 'idle' ? 0 : 1)) / shuffled.value.length) * 100 : 0)
@@ -248,6 +250,17 @@ function readStoredDictionary() {
   } catch {
     return null
   }
+}
+
+function getInitialDictionaryId() {
+  const savedDictionaryId = localStorage.getItem('echospell-dictionary')
+  if (!savedDictionaryId) return DEFAULT_DICTIONARY_ID
+  if (savedDictionaryId === 'core-spelling' && localStorage.getItem(DEFAULT_DICTIONARY_MIGRATION_KEY) !== 'true') {
+    localStorage.setItem(DEFAULT_DICTIONARY_MIGRATION_KEY, 'true')
+    localStorage.setItem('echospell-dictionary', DEFAULT_DICTIONARY_ID)
+    return DEFAULT_DICTIONARY_ID
+  }
+  return savedDictionaryId
 }
 
 function localize(value) {
@@ -437,7 +450,7 @@ const errorMessage = computed(() => {
 onMounted(() => {
   document.documentElement.lang = locale.value === 'ja' ? 'ja' : 'zh-CN'
   if (!availableDictionaries.value.some(item => item.id === selectedDictionaryId.value)) {
-    selectedDictionaryId.value = 'cet4-high-frequency'
+    selectedDictionaryId.value = DEFAULT_DICTIONARY_ID
   }
   startSession()
 })
