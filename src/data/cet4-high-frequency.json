@@ -16,2576 +16,4657 @@
       "word": "alter",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "改变，改动，变更"
-      }
+        "zh": "v. 改变 / 改动 / 变更",
+        "ja": "v. 変える / 変更する / 改める"
+      },
+      "syllables": [
+        "al",
+        "ter"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 2,
       "word": "burst",
-      "partOfSpeech": "vi. n.",
+      "partOfSpeech": "vi. / n.",
       "meaning": {
-        "zh": "突然发生，爆裂"
-      }
+        "zh": "vi. 突然发生 / 爆裂；n. 爆裂",
+        "ja": "vi. 突然起こる / 破裂する；n. 破裂"
+      },
+      "syllables": [
+        "burst"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 3,
       "word": "dispose",
       "partOfSpeech": "vi.",
       "meaning": {
-        "zh": "除掉；处置；解决；处理(of)"
-      }
+        "zh": "vi. 处理 / 处置 / 清除",
+        "ja": "vi. 処理する / 処分する / 片づける"
+      },
+      "syllables": [
+        "dis",
+        "pose"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 4,
       "word": "blast",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / vi.",
       "meaning": {
-        "zh": "爆炸；气流 vi. 炸，炸掉"
-      }
+        "zh": "n. 爆炸 / 气流；vi. 爆破 / 炸掉",
+        "ja": "n. 爆発 / 突風；vi. 爆破する / 吹き飛ばす"
+      },
+      "syllables": [
+        "blast"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 5,
       "word": "consume",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "消耗，耗尽"
-      }
+        "zh": "v. 消耗 / 消费 / 耗尽",
+        "ja": "v. 消費する / 使い尽くす / 食べる"
+      },
+      "syllables": [
+        "con",
+        "sume"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 6,
       "word": "split",
-      "partOfSpeech": "v.",
+      "partOfSpeech": "v. / adj.",
       "meaning": {
-        "zh": "劈开；割裂；分裂 a. 裂开的"
-      }
+        "zh": "v. 劈开 / 分裂 / 割裂；adj. 裂开的",
+        "ja": "v. 割る / 分裂する / 裂く；adj. 裂けた"
+      },
+      "syllables": [
+        "split"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 7,
       "word": "spit",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "吐(唾液等)；唾弃"
-      }
+        "zh": "v. 吐出 / 吐唾沫 / 唾弃",
+        "ja": "v. 吐く / 唾を吐く / 軽蔑する"
+      },
+      "syllables": [
+        "spit"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 8,
       "word": "spill",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "溢出，溅出，倒出"
-      }
+        "zh": "v. 溢出 / 溅出 / 倒出",
+        "ja": "v. こぼす / あふれる / 流出する"
+      },
+      "syllables": [
+        "spill"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 9,
       "word": "slip",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "滑动，滑落；忽略"
-      }
+        "zh": "v. 滑动 / 滑落 / 忽略",
+        "ja": "v. 滑る / 滑り落ちる / 見落とす"
+      },
+      "syllables": [
+        "slip"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 10,
       "word": "slide",
-      "partOfSpeech": "v.",
+      "partOfSpeech": "v. / n.",
       "meaning": {
-        "zh": "滑动，滑落 n. 滑动；滑面；幻灯片"
-      }
+        "zh": "v. 滑动 / 滑落；n. 滑动 / 滑面 / 幻灯片",
+        "ja": "v. 滑る / 滑り落ちる；n. 滑走 / スライド"
+      },
+      "syllables": [
+        "slide"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 11,
       "word": "bacteria",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "细菌"
-      }
+        "zh": "n. 细菌",
+        "ja": "n. 細菌"
+      },
+      "syllables": [
+        "bac",
+        "te",
+        "ri",
+        "a"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 12,
       "word": "breed",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "种，品种 v. 繁殖，产仔"
-      }
+        "zh": "n. 品种 / 种类；v. 繁殖 / 饲养",
+        "ja": "n. 品種 / 種類；v. 繁殖する / 飼育する"
+      },
+      "syllables": [
+        "breed"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 13,
       "word": "budget",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "预算 v. 编预算，作安排"
-      }
+        "zh": "n. 预算；v. 编预算 / 安排开支",
+        "ja": "n. 予算；v. 予算を組む / 支出を計画する"
+      },
+      "syllables": [
+        "bud",
+        "get"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 14,
       "word": "candidate",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "候选人"
-      }
+        "zh": "n. 候选人 / 申请者",
+        "ja": "n. 候補者 / 志願者"
+      },
+      "syllables": [
+        "can",
+        "di",
+        "date"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 15,
       "word": "campus",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "校园"
-      }
+        "zh": "n. 校园",
+        "ja": "n. キャンパス / 校内"
+      },
+      "syllables": [
+        "cam",
+        "pus"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 16,
       "word": "liberal",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "慷慨的；丰富的；自由的"
-      }
+        "zh": "adj. 慷慨的 / 丰富的 / 自由的",
+        "ja": "adj. 寛大な / 豊富な / 自由主義の"
+      },
+      "syllables": [
+        "lib",
+        "er",
+        "al"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 17,
       "word": "transform",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "转变，变革；变换"
-      }
+        "zh": "v. 转变 / 变革 / 变换",
+        "ja": "v. 変える / 変革する / 変換する"
+      },
+      "syllables": [
+        "trans",
+        "form"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 18,
       "word": "transmit",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "传播，播送；传递"
-      }
+        "zh": "v. 传播 / 播送 / 传递",
+        "ja": "v. 伝える / 送信する / 伝播させる"
+      },
+      "syllables": [
+        "trans",
+        "mit"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 19,
       "word": "transplant",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "移植"
-      }
+        "zh": "v. 移植 / 移栽",
+        "ja": "v. 移植する / 移し替える"
+      },
+      "syllables": [
+        "trans",
+        "plant"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 20,
       "word": "transport",
-      "partOfSpeech": "vt.",
+      "partOfSpeech": "v. / n.",
       "meaning": {
-        "zh": "运输，运送 n. 运输，运输工具"
-      }
+        "zh": "v. 运输 / 运送；n. 运输 / 交通工具",
+        "ja": "v. 輸送する / 運ぶ；n. 輸送 / 交通機関"
+      },
+      "syllables": [
+        "trans",
+        "port"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 21,
       "word": "shift",
-      "partOfSpeech": "v.",
+      "partOfSpeech": "v. / n.",
       "meaning": {
-        "zh": "转移；转动；转变"
-      }
+        "zh": "v. 转移 / 转动 / 转变；n. 变化 / 轮班",
+        "ja": "v. 移す / 変える / 転換する；n. 変化 / 交替勤務"
+      },
+      "syllables": [
+        "shift"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 22,
       "word": "vary",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "变化，改变；使多样化"
-      }
+        "zh": "v. 变化 / 改变 / 使多样化",
+        "ja": "v. 変わる / 変える / 多様にする"
+      },
+      "syllables": [
+        "var",
+        "y"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 23,
       "word": "vanish",
       "partOfSpeech": "vi.",
       "meaning": {
-        "zh": "消灭，不见"
-      }
+        "zh": "vi. 消失 / 不见",
+        "ja": "vi. 消える / 姿を消す"
+      },
+      "syllables": [
+        "van",
+        "ish"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 24,
       "word": "swallow",
-      "partOfSpeech": "v.",
+      "partOfSpeech": "v. / n.",
       "meaning": {
-        "zh": "吞下，咽下 n. 燕子"
-      }
+        "zh": "v. 吞下 / 咽下；n. 燕子",
+        "ja": "v. 飲み込む；n. ツバメ"
+      },
+      "syllables": [
+        "swal",
+        "low"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 25,
       "word": "suspicion",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "怀疑，疑心"
-      }
+        "zh": "n. 怀疑 / 疑心",
+        "ja": "n. 疑い / 疑念"
+      },
+      "syllables": [
+        "sus",
+        "pi",
+        "cion"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 26,
       "word": "suspicious",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "怀疑的，可疑的"
-      }
+        "zh": "adj. 怀疑的 / 可疑的",
+        "ja": "adj. 疑わしい / 怪しい"
+      },
+      "syllables": [
+        "sus",
+        "pi",
+        "cious"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 27,
       "word": "mild",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "温暖的，暖和的；温柔的，味淡的"
-      }
+        "zh": "adj. 温和的 / 暖和的 / 味淡的",
+        "ja": "adj. 穏やかな / 暖かい / 味が薄い"
+      },
+      "syllables": [
+        "mild"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 28,
       "word": "tender",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "温柔的；脆弱的"
-      }
+        "zh": "adj. 温柔的 / 脆弱的 / 嫩的",
+        "ja": "adj. 優しい / 傷つきやすい / 柔らかい"
+      },
+      "syllables": [
+        "ten",
+        "der"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 29,
       "word": "nuisance",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "损害，妨害，讨厌(的人或事物)"
-      }
+        "zh": "n. 妨害 / 讨厌的人或事",
+        "ja": "n. 迷惑 / 厄介な人や物"
+      },
+      "syllables": [
+        "nui",
+        "sance"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 30,
       "word": "insignificant",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "无意义的，无足轻重的；无价值的"
-      }
+        "zh": "adj. 无意义的 / 无足轻重的 / 无价值的",
+        "ja": "adj. 取るに足りない / 意味のない / 価値の低い"
+      },
+      "syllables": [
+        "in",
+        "sig",
+        "nif",
+        "i",
+        "cant"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 31,
       "word": "accelerate",
-      "partOfSpeech": "vt.",
+      "partOfSpeech": "v.",
       "meaning": {
-        "zh": "加速，促进"
-      }
+        "zh": "v. 加速 / 促进",
+        "ja": "v. 加速する / 促進する"
+      },
+      "syllables": [
+        "ac",
+        "cel",
+        "er",
+        "ate"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 32,
       "word": "absolute",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "绝对的，无条件的；完全的"
-      }
+        "zh": "adj. 绝对的 / 无条件的 / 完全的",
+        "ja": "adj. 絶対的な / 無条件の / 完全な"
+      },
+      "syllables": [
+        "ab",
+        "so",
+        "lute"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 33,
       "word": "boundary",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "分界线，边界"
-      }
+        "zh": "n. 分界线 / 边界",
+        "ja": "n. 境界線 / 境界"
+      },
+      "syllables": [
+        "bound",
+        "a",
+        "ry"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 34,
       "word": "brake",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "刹车，制动器 v. 刹住(车)"
-      }
+        "zh": "n. 刹车 / 制动器；v. 刹车",
+        "ja": "n. ブレーキ / 制動装置；v. ブレーキをかける"
+      },
+      "syllables": [
+        "brake"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 35,
       "word": "catalog",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "目录(册) v. 编目"
-      }
+        "zh": "n. 目录 / 目录册；v. 编目",
+        "ja": "n. 目録 / カタログ；v. 目録を作る"
+      },
+      "syllables": [
+        "cat",
+        "a",
+        "log"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 36,
       "word": "vague",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "模糊的，不明确的"
-      }
+        "zh": "adj. 模糊的 / 不明确的",
+        "ja": "adj. 曖昧な / はっきりしない"
+      },
+      "syllables": [
+        "vague"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 37,
       "word": "vain",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "徒劳，白费"
-      }
+        "zh": "adj. 徒劳的 / 自负的",
+        "ja": "adj. 無駄な / うぬぼれた"
+      },
+      "syllables": [
+        "vain"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 38,
       "word": "extinct",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "绝灭的，熄灭的"
-      }
+        "zh": "adj. 灭绝的 / 熄灭的",
+        "ja": "adj. 絶滅した / 消えた"
+      },
+      "syllables": [
+        "ex",
+        "tinct"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 39,
       "word": "extraordinary",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "不平常的，特别的，非凡的"
-      }
+        "zh": "adj. 不平常的 / 特别的 / 非凡的",
+        "ja": "adj. 並外れた / 特別な / 非凡な"
+      },
+      "syllables": [
+        "ex",
+        "traor",
+        "di",
+        "nar",
+        "y"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 40,
       "word": "extreme",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / n.",
       "meaning": {
-        "zh": "极度的，极端的 n. 极端，过分"
-      }
+        "zh": "adj. 极度的 / 极端的；n. 极端 / 过分",
+        "ja": "adj. 極度の / 極端な；n. 極端 / 過度"
+      },
+      "syllables": [
+        "ex",
+        "treme"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 41,
       "word": "agent",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "代理人，代理商；动因，原因"
-      }
+        "zh": "n. 代理人 / 代理商 / 动因",
+        "ja": "n. 代理人 / 代理店 / 原因となるもの"
+      },
+      "syllables": [
+        "a",
+        "gent"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 42,
       "word": "alcohol",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "含酒精的饮料，酒精"
-      }
+        "zh": "n. 酒精 / 含酒精饮料",
+        "ja": "n. アルコール / 酒類"
+      },
+      "syllables": [
+        "al",
+        "co",
+        "hol"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 43,
       "word": "appeal",
-      "partOfSpeech": "n. /vi.",
+      "partOfSpeech": "n. / vi.",
       "meaning": {
-        "zh": "呼吁，恳求"
-      }
+        "zh": "n. 呼吁 / 恳求；vi. 呼吁 / 有吸引力",
+        "ja": "n. 訴え / 懇願；vi. 訴える / 魅力がある"
+      },
+      "syllables": [
+        "ap",
+        "peal"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 44,
       "word": "appreciate",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "重视，赏识，欣赏"
-      }
+        "zh": "vt. 重视 / 赏识 / 欣赏",
+        "ja": "vt. 評価する / 感謝する / 鑑賞する"
+      },
+      "syllables": [
+        "ap",
+        "pre",
+        "ci",
+        "ate"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 45,
       "word": "approve",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "赞成，同意，批准"
-      }
+        "zh": "v. 赞成 / 同意 / 批准",
+        "ja": "v. 賛成する / 同意する / 承認する"
+      },
+      "syllables": [
+        "ap",
+        "prove"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 46,
       "word": "stimulate",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "刺激，激励"
-      }
+        "zh": "vt. 刺激 / 激励",
+        "ja": "vt. 刺激する / 励ます / 促進する"
+      },
+      "syllables": [
+        "stim",
+        "u",
+        "late"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 47,
       "word": "acquire",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "取得，获得；学到"
-      }
+        "zh": "vt. 取得 / 获得 / 学到",
+        "ja": "vt. 得る / 獲得する / 身につける"
+      },
+      "syllables": [
+        "ac",
+        "quire"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 48,
       "word": "accomplish",
-      "partOfSpeech": "vt .",
+      "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "完成，到达；实行"
-      }
+        "zh": "vt. 完成 / 实现 / 达到",
+        "ja": "vt. 完成する / 成し遂げる / 達成する"
+      },
+      "syllables": [
+        "ac",
+        "com",
+        "plish"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 49,
       "word": "network",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "网状物；广播网，电视网；网络"
-      }
+        "zh": "n. 网络 / 广播网 / 网状物",
+        "ja": "n. ネットワーク / 放送網 / 網状組織"
+      },
+      "syllables": [
+        "net",
+        "work"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 50,
       "word": "tide",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "潮汐；潮流"
-      }
+        "zh": "n. 潮汐 / 潮流",
+        "ja": "n. 潮 / 潮流"
+      },
+      "syllables": [
+        "tide"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 51,
       "word": "tidy",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "整洁的，整齐的"
-      }
+        "zh": "adj. 整洁的 / 整齐的",
+        "ja": "adj. 整った / きちんとした"
+      },
+      "syllables": [
+        "ti",
+        "dy"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 52,
       "word": "trace",
-      "partOfSpeech": "vt.",
+      "partOfSpeech": "vt. / n.",
       "meaning": {
-        "zh": "追踪，找到 n. 痕迹，踪迹"
-      }
+        "zh": "vt. 追踪 / 找到；n. 痕迹 / 踪迹",
+        "ja": "vt. たどる / 見つけ出す；n. 跡 / 形跡"
+      },
+      "syllables": [
+        "trace"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 53,
       "word": "torture",
-      "partOfSpeech": "n. /vt.",
+      "partOfSpeech": "n. / vt.",
       "meaning": {
-        "zh": "拷打，折磨"
-      }
+        "zh": "n. 拷打 / 折磨；vt. 折磨 / 拷问",
+        "ja": "n. 拷問 / 苦痛；vt. 苦しめる / 拷問する"
+      },
+      "syllables": [
+        "tor",
+        "ture"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 54,
       "word": "wander",
       "partOfSpeech": "vi.",
       "meaning": {
-        "zh": "漫游，闲逛"
-      }
+        "zh": "vi. 漫游 / 闲逛",
+        "ja": "vi. さまよう / ぶらつく"
+      },
+      "syllables": [
+        "wan",
+        "der"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 55,
       "word": "wax",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "蜡"
-      }
+        "zh": "n. 蜡",
+        "ja": "n. ろう / ワックス"
+      },
+      "syllables": [
+        "wax"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 56,
       "word": "weave",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "织，编"
-      }
+        "zh": "v. 编织 / 编造",
+        "ja": "v. 織る / 編む / 作り上げる"
+      },
+      "syllables": [
+        "weave"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 57,
       "word": "preserve",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "保护，保存，保持，维持"
-      }
+        "zh": "v. 保护 / 保存 / 维持",
+        "ja": "v. 保護する / 保存する / 維持する"
+      },
+      "syllables": [
+        "pre",
+        "serve"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 61,
       "word": "abuse",
-      "partOfSpeech": "v.",
+      "partOfSpeech": "v. / n.",
       "meaning": {
-        "zh": "滥用，虐待；谩骂"
-      }
+        "zh": "v. 滥用 / 虐待 / 辱骂；n. 滥用 / 虐待",
+        "ja": "v. 乱用する / 虐待する / 罵る；n. 乱用 / 虐待"
+      },
+      "syllables": [
+        "a",
+        "buse"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 62,
       "word": "academic",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "学术的；高等院校的；研究院的"
-      }
+        "zh": "adj. 学术的 / 高等院校的",
+        "ja": "adj. 学術的な / 大学の"
+      },
+      "syllables": [
+        "ac",
+        "a",
+        "dem",
+        "ic"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 63,
       "word": "academy",
-      "partOfSpeech": "n. (",
+      "partOfSpeech": "n.",
       "meaning": {
-        "zh": "高等)专科院校；学会"
-      }
+        "zh": "n. 专科学院 / 学会",
+        "ja": "n. 専門学校 / 学会 / アカデミー"
+      },
+      "syllables": [
+        "a",
+        "cad",
+        "e",
+        "my"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 64,
       "word": "battery",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "电池(组)"
-      }
+        "zh": "n. 电池 / 电池组",
+        "ja": "n. 電池 / バッテリー"
+      },
+      "syllables": [
+        "bat",
+        "ter",
+        "y"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 65,
       "word": "barrier",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "障碍；棚栏"
-      }
+        "zh": "n. 障碍 / 屏障 / 栅栏",
+        "ja": "n. 障害 / 防壁 / 柵"
+      },
+      "syllables": [
+        "bar",
+        "ri",
+        "er"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 66,
       "word": "cargo",
-      "partOfSpeech": "n. (",
+      "partOfSpeech": "n.",
       "meaning": {
-        "zh": "船、飞机等装载的)货物"
-      }
+        "zh": "n. 货物 / 船货 / 机载货物",
+        "ja": "n. 貨物 / 積み荷"
+      },
+      "syllables": [
+        "car",
+        "go"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 67,
       "word": "career",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "生涯，职业"
-      }
+        "zh": "n. 生涯 / 职业",
+        "ja": "n. 経歴 / 職業 / キャリア"
+      },
+      "syllables": [
+        "ca",
+        "reer"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 68,
       "word": "vessel",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "船舶；容器，器皿；血管"
-      }
+        "zh": "n. 船舶 / 容器 / 血管",
+        "ja": "n. 船舶 / 容器 / 血管"
+      },
+      "syllables": [
+        "ves",
+        "sel"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 69,
       "word": "vertical",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "垂直的"
-      }
+        "zh": "adj. 垂直的 / 竖直的",
+        "ja": "adj. 垂直の / 縦方向の"
+      },
+      "syllables": [
+        "ver",
+        "ti",
+        "cal"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 70,
       "word": "oblige",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "迫使，责成；使感激"
-      }
+        "zh": "v. 迫使 / 责成 / 使感激",
+        "ja": "v. 義務づける / 余儀なくさせる / 感謝させる"
+      },
+      "syllables": [
+        "o",
+        "blige"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 71,
       "word": "obscure",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "阴暗，模糊"
-      }
+        "zh": "adj. 阴暗的 / 模糊的 / 费解的",
+        "ja": "adj. 暗い / 曖昧な / 分かりにくい"
+      },
+      "syllables": [
+        "ob",
+        "scure"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 72,
       "word": "extent",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "程度，范围，大小，限度"
-      }
+        "zh": "n. 程度 / 范围 / 限度",
+        "ja": "n. 程度 / 範囲 / 限度"
+      },
+      "syllables": [
+        "ex",
+        "tent"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 73,
       "word": "exterior",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / adj.",
       "meaning": {
-        "zh": "外部，外表 a. 外部的，外表的"
-      }
+        "zh": "n. 外部 / 外表；adj. 外部的 / 外表的",
+        "ja": "n. 外部 / 外観；adj. 外側の / 外部の"
+      },
+      "syllables": [
+        "ex",
+        "te",
+        "ri",
+        "or"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 74,
       "word": "external",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "外部的，外表的，外面的"
-      }
+        "zh": "adj. 外部的 / 外表的 / 外面的",
+        "ja": "adj. 外部の / 外側の / 外面的な"
+      },
+      "syllables": [
+        "ex",
+        "ter",
+        "nal"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 75,
       "word": "petrol",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "汽油"
-      }
+        "zh": "n. 汽油",
+        "ja": "n. ガソリン"
+      },
+      "syllables": [
+        "pet",
+        "rol"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 76,
       "word": "petroleum",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "石油"
-      }
+        "zh": "n. 石油",
+        "ja": "n. 石油"
+      },
+      "syllables": [
+        "pe",
+        "tro",
+        "le",
+        "um"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 77,
       "word": "delay",
-      "partOfSpeech": "vt. /n.",
+      "partOfSpeech": "vt. / n.",
       "meaning": {
-        "zh": "推迟，延误，耽搁"
-      }
+        "zh": "vt. 推迟 / 延误；n. 耽搁 / 延迟",
+        "ja": "vt. 遅らせる / 延期する；n. 遅延 / 遅れ"
+      },
+      "syllables": [
+        "de",
+        "lay"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 78,
       "word": "decay",
-      "partOfSpeech": "vi.",
+      "partOfSpeech": "vi. / n.",
       "meaning": {
-        "zh": "腐烂，腐朽"
-      }
+        "zh": "vi. 腐烂 / 衰退；n. 腐朽 / 衰败",
+        "ja": "vi. 腐る / 衰える；n. 腐敗 / 衰退"
+      },
+      "syllables": [
+        "de",
+        "cay"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 79,
       "word": "decent",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "像样的，体面的"
-      }
+        "zh": "adj. 像样的 / 体面的 / 得体的",
+        "ja": "adj. きちんとした / まともな / 上品な"
+      },
+      "syllables": [
+        "de",
+        "cent"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 80,
       "word": "route",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "路；路线；航线"
-      }
+        "zh": "n. 路线 / 道路 / 航线",
+        "ja": "n. ルート / 道路 / 航路"
+      },
+      "syllables": [
+        "route"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 81,
       "word": "ruin",
-      "partOfSpeech": "v.",
+      "partOfSpeech": "v. / n.",
       "meaning": {
-        "zh": "毁坏，破坏 n. 毁灭，[pl. ]废墟"
-      }
+        "zh": "v. 毁坏 / 破坏；n. 毁灭 / 废墟",
+        "ja": "v. 台無しにする / 破壊する；n. 破滅 / 廃墟"
+      },
+      "syllables": [
+        "ru",
+        "in"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 82,
       "word": "sake",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "缘故，理由"
-      }
+        "zh": "n. 缘故 / 理由 / 利益",
+        "ja": "n. ため / 理由 / 利益"
+      },
+      "syllables": [
+        "sake"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 83,
       "word": "satellite",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "卫星"
-      }
+        "zh": "n. 卫星",
+        "ja": "n. 衛星"
+      },
+      "syllables": [
+        "sat",
+        "el",
+        "lite"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 84,
       "word": "scale",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "大小，规模；等级；刻度"
-      }
+        "zh": "n. 规模 / 等级 / 刻度",
+        "ja": "n. 規模 / 等級 / 目盛り"
+      },
+      "syllables": [
+        "scale"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 85,
       "word": "temple",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "庙宇"
-      }
+        "zh": "n. 庙宇 / 寺院",
+        "ja": "n. 寺院 / 神殿"
+      },
+      "syllables": [
+        "tem",
+        "ple"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 86,
       "word": "tedious",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "乏味道，单调的"
-      }
+        "zh": "adj. 乏味的 / 单调的",
+        "ja": "adj. 退屈な / 単調な"
+      },
+      "syllables": [
+        "te",
+        "di",
+        "ous"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 87,
       "word": "tend",
       "partOfSpeech": "vi.",
       "meaning": {
-        "zh": "易于，趋向"
-      }
+        "zh": "vi. 易于 / 趋向",
+        "ja": "vi. 傾向がある / 〜しがちである"
+      },
+      "syllables": [
+        "tend"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 88,
       "word": "tendency",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "趋向，趋势"
-      }
+        "zh": "n. 趋向 / 趋势",
+        "ja": "n. 傾向 / 趨勢"
+      },
+      "syllables": [
+        "ten",
+        "den",
+        "cy"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 89,
       "word": "ultimate",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / n.",
       "meaning": {
-        "zh": "极端的，最大的，最终的 n. 极端"
-      }
+        "zh": "adj. 最终的 / 最大的 / 极端的；n. 终极",
+        "ja": "adj. 最終の / 最大の / 究極の；n. 究極"
+      },
+      "syllables": [
+        "ul",
+        "ti",
+        "mate"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 90,
       "word": "undergo",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "经历，遭受"
-      }
+        "zh": "v. 经历 / 遭受",
+        "ja": "v. 経験する / 受ける"
+      },
+      "syllables": [
+        "un",
+        "der",
+        "go"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 91,
       "word": "abundant",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "丰富的，充裕的，大量的"
-      }
+        "zh": "adj. 丰富的 / 充裕的 / 大量的",
+        "ja": "adj. 豊富な / 十分な / 大量の"
+      },
+      "syllables": [
+        "a",
+        "bun",
+        "dant"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 92,
       "word": "adopt",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "收养；采用；采纳"
-      }
+        "zh": "v. 收养 / 采用 / 采纳",
+        "ja": "v. 養子にする / 採用する / 取り入れる"
+      },
+      "syllables": [
+        "a",
+        "dopt"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 93,
       "word": "adapt",
-      "partOfSpeech": "vi.",
+      "partOfSpeech": "v.",
       "meaning": {
-        "zh": "适应，适合；改编，改写 vt. 使适应"
-      }
+        "zh": "v. 适应 / 改编 / 使适合",
+        "ja": "v. 適応する / 改作する / 適合させる"
+      },
+      "syllables": [
+        "a",
+        "dapt"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 94,
       "word": "bachelor",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "学士，学士学位；单身汉"
-      }
+        "zh": "n. 学士 / 学士学位 / 单身汉",
+        "ja": "n. 学士 / 学士号 / 独身男性"
+      },
+      "syllables": [
+        "bach",
+        "e",
+        "lor"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 95,
       "word": "casual",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "偶然的，碰巧的；临时的；非正式的"
-      }
+        "zh": "adj. 偶然的 / 临时的 / 非正式的",
+        "ja": "adj. 偶然の / 一時的な / カジュアルな"
+      },
+      "syllables": [
+        "cas",
+        "u",
+        "al"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 96,
       "word": "trap",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "陷阱，圈套 v. 设陷阱捕捉"
-      }
+        "zh": "n. 陷阱 / 圈套；v. 诱捕 / 使陷入困境",
+        "ja": "n. 罠 / 策略；v. 罠にかける / 閉じ込める"
+      },
+      "syllables": [
+        "trap"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 97,
       "word": "vacant",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "空的，未占用的"
-      }
+        "zh": "adj. 空的 / 未占用的",
+        "ja": "adj. 空いている / 未使用の"
+      },
+      "syllables": [
+        "va",
+        "cant"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 98,
       "word": "vacuum",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "真空，真空吸尘器"
-      }
+        "zh": "n. 真空 / 真空吸尘器",
+        "ja": "n. 真空 / 掃除機"
+      },
+      "syllables": [
+        "vac",
+        "u",
+        "um"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 99,
       "word": "oral",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "口头的，口述的，口的"
-      }
+        "zh": "adj. 口头的 / 口述的 / 口部的",
+        "ja": "adj. 口頭の / 口述の / 口の"
+      },
+      "syllables": [
+        "o",
+        "ral"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 100,
       "word": "optics",
-      "partOfSpeech": "n. (",
+      "partOfSpeech": "n.",
       "meaning": {
-        "zh": "单、复数同形)光学"
-      }
+        "zh": "n. 光学",
+        "ja": "n. 光学"
+      },
+      "syllables": [
+        "op",
+        "tics"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 101,
       "word": "organ",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "器官，风琴"
-      }
+        "zh": "n. 器官 / 风琴 / 机构",
+        "ja": "n. 器官 / オルガン / 機関"
+      },
+      "syllables": [
+        "or",
+        "gan"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 102,
       "word": "excess",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "过分，过量，过剩"
-      }
+        "zh": "n. 过量 / 过剩 / 过度",
+        "ja": "n. 過剰 / 超過 / 行き過ぎ"
+      },
+      "syllables": [
+        "ex",
+        "cess"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 103,
       "word": "expel",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "驱逐，开除，赶出"
-      }
+        "zh": "v. 驱逐 / 开除 / 赶出",
+        "ja": "v. 追放する / 除籍する / 排出する"
+      },
+      "syllables": [
+        "ex",
+        "pel"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 104,
       "word": "expend",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "消费"
-      }
+        "zh": "v. 花费 / 消耗",
+        "ja": "v. 費やす / 消費する"
+      },
+      "syllables": [
+        "ex",
+        "pend"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 105,
       "word": "expenditure",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "支出，消费；经费"
-      }
+        "zh": "n. 支出 / 消费 / 经费",
+        "ja": "n. 支出 / 消費 / 経費"
+      },
+      "syllables": [
+        "ex",
+        "pen",
+        "di",
+        "ture"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 106,
       "word": "expense",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "开销，费用"
-      }
+        "zh": "n. 开销 / 费用",
+        "ja": "n. 費用 / 出費"
+      },
+      "syllables": [
+        "ex",
+        "pense"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 107,
       "word": "expensive",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "花钱多的；价格高贵的"
-      }
+        "zh": "adj. 昂贵的 / 价格高的",
+        "ja": "adj. 高価な / 値段が高い"
+      },
+      "syllables": [
+        "ex",
+        "pen",
+        "sive"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 108,
       "word": "expand",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "扩大，扩张；展开，膨胀"
-      }
+        "zh": "v. 扩大 / 扩张 / 膨胀",
+        "ja": "v. 拡大する / 広がる / 膨張する"
+      },
+      "syllables": [
+        "ex",
+        "pand"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 109,
       "word": "expansion",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "扩大，扩充；发展，膨胀"
-      }
+        "zh": "n. 扩大 / 扩充 / 膨胀",
+        "ja": "n. 拡大 / 拡張 / 膨張"
+      },
+      "syllables": [
+        "ex",
+        "pan",
+        "sion"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 110,
       "word": "private",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "私人的，个人的"
-      }
+        "zh": "adj. 私人的 / 个人的 / 私下的",
+        "ja": "adj. 私的な / 個人の / 非公開の"
+      },
+      "syllables": [
+        "pri",
+        "vate"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 111,
       "word": "individual",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / n.",
       "meaning": {
-        "zh": "个别的，单独的 n. 个人，个体"
-      }
+        "zh": "adj. 个别的 / 单独的；n. 个人 / 个体",
+        "ja": "adj. 個々の / 個別の；n. 個人 / 個体"
+      },
+      "syllables": [
+        "in",
+        "di",
+        "vid",
+        "u",
+        "al"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 112,
       "word": "personal",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "个人的，私人的；亲自的"
-      }
+        "zh": "adj. 个人的 / 私人的 / 亲自的",
+        "ja": "adj. 個人の / 私的な / 本人の"
+      },
+      "syllables": [
+        "per",
+        "son",
+        "al"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 114,
       "word": "personnel",
-      "partOfSpeech": "n. [",
+      "partOfSpeech": "n.",
       "meaning": {
-        "zh": "总称] 人员，员工；人事部门"
-      }
+        "zh": "n. 人员 / 员工 / 人事部门",
+        "ja": "n. 人員 / 職員 / 人事部"
+      },
+      "syllables": [
+        "per",
+        "son",
+        "nel"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 115,
       "word": "the Pacific Ocean",
-      "partOfSpeech": "",
+      "partOfSpeech": "n.",
       "meaning": {
-        "zh": "太平洋"
-      }
+        "zh": "n. 太平洋",
+        "ja": "n. 太平洋"
+      },
+      "syllables": [
+        "the",
+        "Pa",
+        "cif",
+        "ic",
+        "O",
+        "cean"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 116,
       "word": "the Atlantic Ocean",
-      "partOfSpeech": "",
+      "partOfSpeech": "n.",
       "meaning": {
-        "zh": "大西洋"
-      }
+        "zh": "n. 大西洋",
+        "ja": "n. 大西洋"
+      },
+      "syllables": [
+        "the",
+        "At",
+        "lan",
+        "tic",
+        "O",
+        "cean"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 117,
       "word": "the Arctic Ocean",
-      "partOfSpeech": "",
+      "partOfSpeech": "n.",
       "meaning": {
-        "zh": "北冰洋"
-      }
+        "zh": "n. 北冰洋",
+        "ja": "n. 北極海"
+      },
+      "syllables": [
+        "the",
+        "Arc",
+        "tic",
+        "O",
+        "cean"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 118,
       "word": "the Antarctic Ocean",
-      "partOfSpeech": "",
+      "partOfSpeech": "n.",
       "meaning": {
-        "zh": "南冰洋"
-      }
+        "zh": "n. 南冰洋",
+        "ja": "n. 南極海"
+      },
+      "syllables": [
+        "the",
+        "Ant",
+        "arc",
+        "tic",
+        "O",
+        "cean"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 119,
       "word": "grant",
-      "partOfSpeech": "vt.",
+      "partOfSpeech": "vt. / n.",
       "meaning": {
-        "zh": "授予，同意，准予"
-      }
+        "zh": "vt. 授予 / 同意 / 准予；n. 补助金",
+        "ja": "vt. 授与する / 認める / 許可する；n. 補助金"
+      },
+      "syllables": [
+        "grant"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 119,
       "word": "grand",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "宏伟大，壮丽的，重大的"
-      }
+        "zh": "adj. 宏伟的 / 壮丽的 / 重大的",
+        "ja": "adj. 壮大な / 豪華な / 重要な"
+      },
+      "syllables": [
+        "grand"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 120,
       "word": "invade",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "侵入，侵略，侵袭"
-      }
+        "zh": "v. 侵入 / 侵略 / 侵袭",
+        "ja": "v. 侵入する / 侵略する / 襲う"
+      },
+      "syllables": [
+        "in",
+        "vade"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 121,
       "word": "acid",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / adj.",
       "meaning": {
-        "zh": "酸，酸性物质 a. 酸的；尖刻的"
-      }
+        "zh": "n. 酸 / 酸性物质；adj. 酸的 / 尖刻的",
+        "ja": "n. 酸 / 酸性物質；adj. 酸性の / 辛辣な"
+      },
+      "syllables": [
+        "ac",
+        "id"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 122,
       "word": "acknowledge",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "承认；致谢"
-      }
+        "zh": "v. 承认 / 致谢 / 告知收到",
+        "ja": "v. 認める / 感謝する / 受領を知らせる"
+      },
+      "syllables": [
+        "ac",
+        "knowl",
+        "edge"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 123,
       "word": "balcony",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "阳台"
-      }
+        "zh": "n. 阳台",
+        "ja": "n. バルコニー / ベランダ"
+      },
+      "syllables": [
+        "bal",
+        "co",
+        "ny"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 124,
       "word": "calculate",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "计算，核算"
-      }
+        "zh": "vt. 计算 / 核算 / 估计",
+        "ja": "vt. 計算する / 見積もる / 算出する"
+      },
+      "syllables": [
+        "cal",
+        "cu",
+        "late"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 125,
       "word": "calendar",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "日历，月历"
-      }
+        "zh": "n. 日历 / 月历",
+        "ja": "n. カレンダー / 暦"
+      },
+      "syllables": [
+        "cal",
+        "en",
+        "dar"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 126,
       "word": "optimistic",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "乐观"
-      }
+        "zh": "adj. 乐观的",
+        "ja": "adj. 楽観的な"
+      },
+      "syllables": [
+        "op",
+        "ti",
+        "mis",
+        "tic"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 127,
       "word": "optional",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "可以任选的，非强制的"
-      }
+        "zh": "adj. 可选择的 / 非强制的",
+        "ja": "adj. 任意の / 選択可能な / 必須でない"
+      },
+      "syllables": [
+        "op",
+        "tion",
+        "al"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 128,
       "word": "outstanding",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "杰出的，突出的，显著的"
-      }
+        "zh": "adj. 杰出的 / 突出的 / 显著的",
+        "ja": "adj. 優れた / 目立った / 未解決の"
+      },
+      "syllables": [
+        "out",
+        "stand",
+        "ing"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 129,
       "word": "export",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "出口(物) v. 出口，输出"
-      }
+        "zh": "n. 出口商品；v. 出口 / 输出",
+        "ja": "n. 輸出品；v. 輸出する / 出力する"
+      },
+      "syllables": [
+        "ex",
+        "port"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 130,
       "word": "import",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "进口(物) v. 进口，输入"
-      }
+        "zh": "n. 进口商品；v. 进口 / 输入",
+        "ja": "n. 輸入品；v. 輸入する / 入力する"
+      },
+      "syllables": [
+        "im",
+        "port"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 131,
       "word": "impose",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "把. . . 加强(on)；采用，利用"
-      }
+        "zh": "vt. 强加 / 征收 / 利用",
+        "ja": "vt. 課す / 押しつける / 利用する"
+      },
+      "syllables": [
+        "im",
+        "pose"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 132,
       "word": "religion",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "宗教，宗教信仰"
-      }
+        "zh": "n. 宗教 / 宗教信仰",
+        "ja": "n. 宗教 / 信仰"
+      },
+      "syllables": [
+        "re",
+        "li",
+        "gion"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 133,
       "word": "religious",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "宗教的"
-      }
+        "zh": "adj. 宗教的 / 虔诚的",
+        "ja": "adj. 宗教の / 信心深い"
+      },
+      "syllables": [
+        "re",
+        "li",
+        "gious"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 134,
       "word": "victim",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "牺牲品，受害者"
-      }
+        "zh": "n. 受害者 / 牺牲品",
+        "ja": "n. 被害者 / 犠牲者"
+      },
+      "syllables": [
+        "vic",
+        "tim"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 135,
       "word": "video",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / adj.",
       "meaning": {
-        "zh": "电视，视频 a. 电视的，录像的"
-      }
+        "zh": "n. 视频 / 录像；adj. 视频的 / 录像的",
+        "ja": "n. 動画 / ビデオ；adj. ビデオの / 映像の"
+      },
+      "syllables": [
+        "vid",
+        "e",
+        "o"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 136,
       "word": "videotape",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "录像磁带 v. 把. . . 录在录像带上"
-      }
+        "zh": "n. 录像带；v. 录像",
+        "ja": "n. ビデオテープ；v. 録画する"
+      },
+      "syllables": [
+        "vid",
+        "e",
+        "o",
+        "tape"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 137,
       "word": "offend",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "冒犯，触犯"
-      }
+        "zh": "v. 冒犯 / 触犯 / 使不快",
+        "ja": "v. 怒らせる / 侮辱する / 違反する"
+      },
+      "syllables": [
+        "of",
+        "fend"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 138,
       "word": "bother",
-      "partOfSpeech": "v.",
+      "partOfSpeech": "v. / n.",
       "meaning": {
-        "zh": "打搅，麻烦"
-      }
+        "zh": "v. 打扰 / 麻烦；n. 麻烦",
+        "ja": "v. 邪魔する / 悩ませる；n. 面倒"
+      },
+      "syllables": [
+        "both",
+        "er"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 139,
       "word": "interfere",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "干涉，干扰，妨碍"
-      }
+        "zh": "v. 干涉 / 干扰 / 妨碍",
+        "ja": "v. 干渉する / 妨げる / 邪魔する"
+      },
+      "syllables": [
+        "in",
+        "ter",
+        "fere"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 140,
       "word": "internal",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "内部的，国内的"
-      }
+        "zh": "adj. 内部的 / 国内的 / 体内的",
+        "ja": "adj. 内部の / 国内の / 体内の"
+      },
+      "syllables": [
+        "in",
+        "ter",
+        "nal"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 141,
       "word": "beforehand",
-      "partOfSpeech": "ad.",
+      "partOfSpeech": "adv.",
       "meaning": {
-        "zh": "预先，事先"
-      }
+        "zh": "adv. 预先 / 事先",
+        "ja": "adv. 前もって / あらかじめ"
+      },
+      "syllables": [
+        "be",
+        "fore",
+        "hand"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 142,
       "word": "racial",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "人种的种族的"
-      }
+        "zh": "adj. 人种的 / 种族的",
+        "ja": "adj. 人種の / 民族の"
+      },
+      "syllables": [
+        "ra",
+        "cial"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 143,
       "word": "radiation",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "放射物，辐射"
-      }
+        "zh": "n. 辐射 / 放射物",
+        "ja": "n. 放射線 / 放射"
+      },
+      "syllables": [
+        "ra",
+        "di",
+        "a",
+        "tion"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 144,
       "word": "radical",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "根本的；激进的"
-      }
+        "zh": "adj. 根本的 / 激进的",
+        "ja": "adj. 根本的な / 急進的な"
+      },
+      "syllables": [
+        "rad",
+        "i",
+        "cal"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 145,
       "word": "range",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "幅度，范围 v. (在某范围内)变动"
-      }
+        "zh": "n. 范围 / 幅度；v. 变动 / 排列",
+        "ja": "n. 範囲 / 幅；v. 変動する / 並べる"
+      },
+      "syllables": [
+        "range"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 146,
       "word": "wonder",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "惊奇，奇迹 v. 想知道，对. . . 感到疑惑"
-      }
+        "zh": "n. 惊奇 / 奇迹；v. 想知道 / 感到疑惑",
+        "ja": "n. 驚き / 奇跡；v. 不思議に思う / 知りたいと思う"
+      },
+      "syllables": [
+        "won",
+        "der"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 147,
       "word": "isolate",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "使隔离，使孤立"
-      }
+        "zh": "vt. 隔离 / 使孤立",
+        "ja": "vt. 隔離する / 孤立させる"
+      },
+      "syllables": [
+        "i",
+        "so",
+        "late"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 148,
       "word": "issue",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "问题，争论点；发行，(报刊)一期"
-      }
+        "zh": "n. 问题 / 争论点 / 一期；v. 发行 / 发布",
+        "ja": "n. 問題 / 争点 / 号；v. 発行する / 発表する"
+      },
+      "syllables": [
+        "is",
+        "sue"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 149,
       "word": "hollow",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "空的，中空的，空虚道"
-      }
+        "zh": "adj. 空的 / 中空的 / 空虚的",
+        "ja": "adj. 空洞の / うつろな / 中空の"
+      },
+      "syllables": [
+        "hol",
+        "low"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 150,
       "word": "hook",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / vt.",
       "meaning": {
-        "zh": "钩 vt. 钩住"
-      }
+        "zh": "n. 钩；vt. 钩住",
+        "ja": "n. フック / 鉤；vt. 引っかける"
+      },
+      "syllables": [
+        "hook"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 151,
       "word": "adequate",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "适当地；足够"
-      }
+        "zh": "adj. 足够的 / 适当的",
+        "ja": "adj. 十分な / 適切な"
+      },
+      "syllables": [
+        "ad",
+        "e",
+        "quate"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 152,
       "word": "adhere",
       "partOfSpeech": "vi.",
       "meaning": {
-        "zh": "粘附，附着；遵守，坚持"
-      }
+        "zh": "vi. 粘附 / 遵守 / 坚持",
+        "ja": "vi. 付着する / 遵守する / 固執する"
+      },
+      "syllables": [
+        "ad",
+        "here"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 153,
       "word": "ban",
-      "partOfSpeech": "vt.",
+      "partOfSpeech": "vt. / n.",
       "meaning": {
-        "zh": "取缔，禁止"
-      }
+        "zh": "vt. 取缔 / 禁止；n. 禁令",
+        "ja": "vt. 禁止する / 禁じる；n. 禁止令"
+      },
+      "syllables": [
+        "ban"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 154,
       "word": "capture",
-      "partOfSpeech": "vt.",
+      "partOfSpeech": "vt. / n.",
       "meaning": {
-        "zh": "俘虏，捕获"
-      }
+        "zh": "vt. 俘虏 / 捕获 / 夺取；n. 捕获",
+        "ja": "vt. 捕らえる / 捕獲する / 奪う；n. 捕獲"
+      },
+      "syllables": [
+        "cap",
+        "ture"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 155,
       "word": "valid",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "有效的，有根据的；正当的"
-      }
+        "zh": "adj. 有效的 / 有根据的 / 正当的",
+        "ja": "adj. 有効な / 根拠のある / 正当な"
+      },
+      "syllables": [
+        "val",
+        "id"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 156,
       "word": "valley",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "山谷，峡谷"
-      }
+        "zh": "n. 山谷 / 峡谷",
+        "ja": "n. 谷 / 渓谷"
+      },
+      "syllables": [
+        "val",
+        "ley"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 157,
       "word": "consistent",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "坚固定；一致的，始终如一的"
-      }
+        "zh": "adj. 一致的 / 始终如一的 / 连贯的",
+        "ja": "adj. 一貫した / 矛盾のない / 安定した"
+      },
+      "syllables": [
+        "con",
+        "sis",
+        "tent"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 158,
       "word": "continuous",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "继续的，连续(不断)的"
-      }
+        "zh": "adj. 连续的 / 不断的",
+        "ja": "adj. 連続した / 絶え間ない"
+      },
+      "syllables": [
+        "con",
+        "tin",
+        "u",
+        "ous"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 159,
       "word": "continual",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "不断地，频繁的"
-      }
+        "zh": "adj. 频繁的 / 不断的",
+        "ja": "adj. 頻繁な / 絶え間ない"
+      },
+      "syllables": [
+        "con",
+        "tin",
+        "u",
+        "al"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 160,
       "word": "explode",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "爆炸；爆发；激增"
-      }
+        "zh": "v. 爆炸 / 爆发 / 激增",
+        "ja": "v. 爆発する / 急増する / 爆発的に起こる"
+      },
+      "syllables": [
+        "ex",
+        "plode"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 161,
       "word": "exploit",
-      "partOfSpeech": "v.",
+      "partOfSpeech": "v. / n.",
       "meaning": {
-        "zh": "剥削；利用，开采"
-      }
+        "zh": "v. 剥削 / 利用 / 开采；n. 壮举",
+        "ja": "v. 搾取する / 活用する / 開発する；n. 功績"
+      },
+      "syllables": [
+        "ex",
+        "ploit"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 162,
       "word": "explore",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "勘探"
-      }
+        "zh": "v. 探索 / 勘探 / 探究",
+        "ja": "v. 探検する / 調査する / 探究する"
+      },
+      "syllables": [
+        "ex",
+        "plore"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 163,
       "word": "explosion",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "爆炸；爆发；激增"
-      }
+        "zh": "n. 爆炸 / 爆发 / 激增",
+        "ja": "n. 爆発 / 急増 / 爆発的発生"
+      },
+      "syllables": [
+        "ex",
+        "plo",
+        "sion"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 164,
       "word": "explosive",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / n.",
       "meaning": {
-        "zh": "爆炸的；极易引起争论的"
-      }
+        "zh": "adj. 爆炸的 / 易爆的 / 极易引发争论的；n. 爆炸物",
+        "ja": "adj. 爆発性の / 激しい / 論争を招きやすい；n. 爆発物"
+      },
+      "syllables": [
+        "ex",
+        "plo",
+        "sive"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 165,
       "word": "remote",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "遥远的，偏僻的"
-      }
+        "zh": "adj. 遥远的 / 偏僻的 / 远程的",
+        "ja": "adj. 遠い / 辺ぴな / リモートの"
+      },
+      "syllables": [
+        "re",
+        "mote"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 166,
       "word": "removal",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "除去，消除"
-      }
+        "zh": "n. 除去 / 消除 / 移动",
+        "ja": "n. 除去 / 撤去 / 移動"
+      },
+      "syllables": [
+        "re",
+        "mov",
+        "al"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 167,
       "word": "render",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "使得，致使"
-      }
+        "zh": "vt. 使得 / 致使 / 提供",
+        "ja": "vt. 〜にする / 与える / 表現する"
+      },
+      "syllables": [
+        "ren",
+        "der"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 168,
       "word": "precaution",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "预防，防备，警惕"
-      }
+        "zh": "n. 预防 / 防备 / 警惕",
+        "ja": "n. 予防策 / 用心 / 警戒"
+      },
+      "syllables": [
+        "pre",
+        "cau",
+        "tion"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 169,
       "word": "idle",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "懒散的，无所事事的"
-      }
+        "zh": "adj. 懒散的 / 闲置的 / 无所事事的",
+        "ja": "adj. 怠惰な / 使用されていない / 何もしていない"
+      },
+      "syllables": [
+        "i",
+        "dle"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 170,
       "word": "identify",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "认出，鉴定"
-      }
+        "zh": "vt. 认出 / 鉴定 / 确认",
+        "ja": "vt. 見分ける / 特定する / 確認する"
+      },
+      "syllables": [
+        "i",
+        "den",
+        "ti",
+        "fy"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 172,
       "word": "poverty",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "贫穷"
-      }
+        "zh": "n. 贫穷 / 贫困",
+        "ja": "n. 貧困 / 貧しさ"
+      },
+      "syllables": [
+        "pov",
+        "er",
+        "ty"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 173,
       "word": "resistant",
-      "partOfSpeech": "a. (to)",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "抵抗的，抗. . . 的，耐. . . 的"
-      }
+        "zh": "adj. 抵抗的 / 抗……的 / 耐……的",
+        "ja": "adj. 抵抗力のある / 耐性のある / 反抗的な"
+      },
+      "syllables": [
+        "re",
+        "sis",
+        "tant"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 174,
       "word": "resolve",
-      "partOfSpeech": "vt.",
+      "partOfSpeech": "vt. / n.",
       "meaning": {
-        "zh": "解决；决定，决意"
-      }
+        "zh": "vt. 解决 / 决定 / 决意；n. 决心",
+        "ja": "vt. 解決する / 決定する / 決意する；n. 決意"
+      },
+      "syllables": [
+        "re",
+        "solve"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 175,
       "word": "barrel",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "桶"
-      }
+        "zh": "n. 桶 / 枪管 / 一桶的量",
+        "ja": "n. 樽 / 銃身 / バレル"
+      },
+      "syllables": [
+        "bar",
+        "rel"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 176,
       "word": "bargain",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / vi.",
       "meaning": {
-        "zh": "便宜货 vi. 讨价还价"
-      }
+        "zh": "n. 便宜货 / 交易；vi. 讨价还价",
+        "ja": "n. 掘り出し物 / 取引；vi. 値段交渉する"
+      },
+      "syllables": [
+        "bar",
+        "gain"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 177,
       "word": "coarse",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "粗的，粗糙的，粗劣的"
-      }
+        "zh": "adj. 粗的 / 粗糙的 / 粗劣的",
+        "ja": "adj. 粗い / 粗雑な / 下品な"
+      },
+      "syllables": [
+        "coarse"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 178,
       "word": "coach",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "教练；长途公共汽车"
-      }
+        "zh": "n. 教练 / 长途汽车；v. 训练 / 指导",
+        "ja": "n. コーチ / 長距離バス；v. 指導する / 訓練する"
+      },
+      "syllables": [
+        "coach"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 179,
       "word": "code",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "准则，法规，密码"
-      }
+        "zh": "n. 准则 / 法规 / 密码",
+        "ja": "n. 規範 / 法規 / 暗号"
+      },
+      "syllables": [
+        "code"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 180,
       "word": "coil",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "线圈 v. 卷，盘绕"
-      }
+        "zh": "n. 线圈 / 卷；v. 卷起 / 盘绕",
+        "ja": "n. コイル / 巻き；v. 巻く / 渦巻く"
+      },
+      "syllables": [
+        "coil"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 181,
       "word": "adult",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / adj.",
       "meaning": {
-        "zh": "成年人"
-      }
+        "zh": "n. 成年人；adj. 成年的",
+        "ja": "n. 大人 / 成人；adj. 成人の"
+      },
+      "syllables": [
+        "a",
+        "dult"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 182,
       "word": "advertise",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "为. . . 做广告"
-      }
+        "zh": "v. 做广告 / 宣传",
+        "ja": "v. 広告する / 宣伝する"
+      },
+      "syllables": [
+        "ad",
+        "ver",
+        "tise"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 183,
       "word": "advertisement",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "广告"
-      }
+        "zh": "n. 广告",
+        "ja": "n. 広告"
+      },
+      "syllables": [
+        "ad",
+        "ver",
+        "tise",
+        "ment"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 184,
       "word": "agency",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "代理商，经销商"
-      }
+        "zh": "n. 代理机构 / 经销商 / 机构",
+        "ja": "n. 代理店 / 機関 / 仲介業者"
+      },
+      "syllables": [
+        "a",
+        "gen",
+        "cy"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 185,
       "word": "focus",
-      "partOfSpeech": "v. (",
+      "partOfSpeech": "v. / n.",
       "meaning": {
-        "zh": "使)聚集 n. 焦点，中心，聚焦"
-      }
+        "zh": "v. 聚焦 / 集中；n. 焦点 / 中心",
+        "ja": "v. 焦点を合わせる / 集中する；n. 焦点 / 中心"
+      },
+      "syllables": [
+        "fo",
+        "cus"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 186,
       "word": "forbid",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "不许，禁止"
-      }
+        "zh": "vt. 禁止 / 不许",
+        "ja": "vt. 禁じる / 禁止する"
+      },
+      "syllables": [
+        "for",
+        "bid"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 187,
       "word": "debate",
-      "partOfSpeech": "n. /v.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "辩论，争论"
-      }
+        "zh": "n. 辩论 / 争论；v. 辩论 / 讨论",
+        "ja": "n. 討論 / 論争；v. 討論する / 議論する"
+      },
+      "syllables": [
+        "de",
+        "bate"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 188,
       "word": "debt",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "欠债"
-      }
+        "zh": "n. 债务 / 欠债",
+        "ja": "n. 借金 / 債務"
+      },
+      "syllables": [
+        "debt"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 189,
       "word": "decade",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "十年"
-      }
+        "zh": "n. 十年",
+        "ja": "n. 10年 / 十年間"
+      },
+      "syllables": [
+        "dec",
+        "ade"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 190,
       "word": "enclose",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "围住；把. . . 装入信封"
-      }
+        "zh": "vt. 围住 / 随信附上 / 装入信封",
+        "ja": "vt. 囲む / 同封する / 封入する"
+      },
+      "syllables": [
+        "en",
+        "close"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 191,
       "word": "encounter",
-      "partOfSpeech": "vt. /n.",
+      "partOfSpeech": "vt. / n.",
       "meaning": {
-        "zh": "遭遇，遭到"
-      }
+        "zh": "vt. 遭遇 / 遇到；n. 遭遇 / 邂逅",
+        "ja": "vt. 遭遇する / 出会う；n. 遭遇 / 出会い"
+      },
+      "syllables": [
+        "en",
+        "coun",
+        "ter"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 192,
       "word": "globe",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "地球，世界；地球仪"
-      }
+        "zh": "n. 地球 / 世界 / 地球仪",
+        "ja": "n. 地球 / 世界 / 地球儀"
+      },
+      "syllables": [
+        "globe"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 193,
       "word": "global",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "全球的；总的"
-      }
+        "zh": "adj. 全球的 / 总体的",
+        "ja": "adj. 世界的な / 全体的な"
+      },
+      "syllables": [
+        "glo",
+        "bal"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 194,
       "word": "scan",
-      "partOfSpeech": "vt.",
+      "partOfSpeech": "vt. / n.",
       "meaning": {
-        "zh": "细看；扫描；浏览"
-      }
+        "zh": "vt. 细看 / 扫描 / 浏览；n. 扫描",
+        "ja": "vt. ざっと見る / スキャンする / 調べる；n. スキャン"
+      },
+      "syllables": [
+        "scan"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 195,
       "word": "scandal",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "丑事，丑闻"
-      }
+        "zh": "n. 丑闻 / 丑事",
+        "ja": "n. スキャンダル / 醜聞"
+      },
+      "syllables": [
+        "scan",
+        "dal"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 196,
       "word": "significance",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "意义；重要性"
-      }
+        "zh": "n. 意义 / 重要性",
+        "ja": "n. 意味 / 重要性"
+      },
+      "syllables": [
+        "sig",
+        "nif",
+        "i",
+        "cance"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 197,
       "word": "subsequent",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "随后的，后来的"
-      }
+        "zh": "adj. 随后的 / 后来的",
+        "ja": "adj. その後の / 後続の"
+      },
+      "syllables": [
+        "sub",
+        "se",
+        "quent"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 198,
       "word": "virtue",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "美德，优点"
-      }
+        "zh": "n. 美德 / 优点",
+        "ja": "n. 美徳 / 長所"
+      },
+      "syllables": [
+        "vir",
+        "tue"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 199,
       "word": "virtual",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "实际上的，事实上的"
-      }
+        "zh": "adj. 实际上的 / 虚拟的",
+        "ja": "adj. 事実上の / 仮想の"
+      },
+      "syllables": [
+        "vir",
+        "tu",
+        "al"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 200,
       "word": "orient",
-      "partOfSpeech": "vt.",
+      "partOfSpeech": "vt. / n.",
       "meaning": {
-        "zh": "使适应，(to, toward)使朝向 n. 东方"
-      }
+        "zh": "vt. 使适应 / 使朝向；n. 东方",
+        "ja": "vt. 適応させる / 方向づける；n. 東洋"
+      },
+      "syllables": [
+        "o",
+        "ri",
+        "ent"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 274,
       "word": "community",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "社区，社会"
-      }
+        "zh": "n. 社区 / 社会 / 群体",
+        "ja": "n. 地域社会 / 共同体 / コミュニティ"
+      },
+      "syllables": [
+        "com",
+        "mu",
+        "ni",
+        "ty"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 275,
       "word": "commit",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "犯（错误，罪行等），干（坏事等）"
-      }
+        "zh": "vt. 犯下 / 承诺 / 投入",
+        "ja": "vt. 犯す / 約束する / 投じる"
+      },
+      "syllables": [
+        "com",
+        "mit"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 276,
       "word": "comment",
-      "partOfSpeech": "n./vt.",
+      "partOfSpeech": "n. / vt.",
       "meaning": {
-        "zh": "评论"
-      }
+        "zh": "n. 评论；vt. 评论 / 发表意见",
+        "ja": "n. コメント / 論評；vt. コメントする / 論評する"
+      },
+      "syllables": [
+        "com",
+        "ment"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 277,
       "word": "distinguish",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "区分，辨别"
-      }
+        "zh": "vt. 区分 / 辨别 / 使出众",
+        "ja": "vt. 区別する / 見分ける / 目立たせる"
+      },
+      "syllables": [
+        "dis",
+        "tin",
+        "guish"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 278,
       "word": "distress",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / vt.",
       "meaning": {
-        "zh": "痛苦，悲伤vt.使痛苦"
-      }
+        "zh": "n. 痛苦 / 悲伤；vt. 使痛苦",
+        "ja": "n. 苦痛 / 悲嘆；vt. 苦しめる"
+      },
+      "syllables": [
+        "dis",
+        "tress"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 279,
       "word": "facility",
-      "partOfSpeech": "n.[pl.]",
+      "partOfSpeech": "n.",
       "meaning": {
-        "zh": "设备，设施；便利，方便"
-      }
+        "zh": "n. 设施 / 设备 / 便利",
+        "ja": "n. 施設 / 設備 / 便利さ"
+      },
+      "syllables": [
+        "fa",
+        "cil",
+        "i",
+        "ty"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 280,
       "word": "faculty",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "能力，技能；系，学科，学院；全体教员"
-      }
+        "zh": "n. 能力 / 学院 / 全体教员",
+        "ja": "n. 能力 / 学部 / 教員団"
+      },
+      "syllables": [
+        "fac",
+        "ul",
+        "ty"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 281,
       "word": "mixture",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "混合，混合物"
-      }
+        "zh": "n. 混合 / 混合物",
+        "ja": "n. 混合 / 混合物"
+      },
+      "syllables": [
+        "mix",
+        "ture"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 282,
       "word": "mood",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "心情，情绪；语气"
-      }
+        "zh": "n. 心情 / 情绪 / 语气",
+        "ja": "n. 気分 / 感情 / 叙法"
+      },
+      "syllables": [
+        "mood"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 283,
       "word": "moral",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / n.",
       "meaning": {
-        "zh": "道德上的，有道德的"
-      }
+        "zh": "adj. 道德的 / 有道德的；n. 寓意",
+        "ja": "adj. 道徳上の / 道徳的な；n. 教訓"
+      },
+      "syllables": [
+        "mor",
+        "al"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 284,
       "word": "prominent",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "突出的"
-      }
+        "zh": "adj. 突出的 / 显著的 / 杰出的",
+        "ja": "adj. 目立つ / 顕著な / 著名な"
+      },
+      "syllables": [
+        "prom",
+        "i",
+        "nent"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 285,
       "word": "substance",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "物质；实质"
-      }
+        "zh": "n. 物质 / 实质 / 内容",
+        "ja": "n. 物質 / 実質 / 内容"
+      },
+      "syllables": [
+        "sub",
+        "stance"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 286,
       "word": "substantial",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "可观的；牢固的；实质的"
-      }
+        "zh": "adj. 可观的 / 牢固的 / 实质的",
+        "ja": "adj. かなりの / 頑丈な / 実質的な"
+      },
+      "syllables": [
+        "sub",
+        "stan",
+        "tial"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 287,
       "word": "prompt",
-      "partOfSpeech": "vt.",
+      "partOfSpeech": "vt. / adj.",
       "meaning": {
-        "zh": "促使a.敏捷的，及时的"
-      }
+        "zh": "vt. 促使 / 提示；adj. 敏捷的 / 及时的",
+        "ja": "vt. 促す / 提示する；adj. 迅速な / 即座の"
+      },
+      "syllables": [
+        "prompt"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 288,
       "word": "vivid",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "生动的"
-      }
+        "zh": "adj. 生动的 / 鲜明的",
+        "ja": "adj. 生き生きした / 鮮明な"
+      },
+      "syllables": [
+        "viv",
+        "id"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 289,
       "word": "vocabulary",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "词汇（量）；词汇表"
-      }
+        "zh": "n. 词汇量 / 词汇表 / 词汇",
+        "ja": "n. 語彙 / 語彙量 / 単語表"
+      },
+      "syllables": [
+        "vo",
+        "cab",
+        "u",
+        "lar",
+        "y"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 290,
       "word": "venture",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "风险投资，风险项目v.冒险；取于"
-      }
+        "zh": "n. 风险项目 / 冒险；v. 冒险 / 敢于",
+        "ja": "n. ベンチャー / 冒険；v. 思い切ってする / 冒険する"
+      },
+      "syllables": [
+        "ven",
+        "ture"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 291,
       "word": "version",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "版本，译本；说法"
-      }
+        "zh": "n. 版本 / 译本 / 说法",
+        "ja": "n. バージョン / 翻訳版 / 説明"
+      },
+      "syllables": [
+        "ver",
+        "sion"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 292,
       "word": "waist",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "腰，腰部"
-      }
+        "zh": "n. 腰 / 腰部",
+        "ja": "n. 腰 / ウエスト"
+      },
+      "syllables": [
+        "waist"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 293,
       "word": "weld",
-      "partOfSpeech": "v./n.",
+      "partOfSpeech": "v. / n.",
       "meaning": {
-        "zh": "焊接"
-      }
+        "zh": "v. 焊接 / 结合；n. 焊接",
+        "ja": "v. 溶接する / 結合する；n. 溶接"
+      },
+      "syllables": [
+        "weld"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 294,
       "word": "yawn",
-      "partOfSpeech": "vi.",
+      "partOfSpeech": "vi. / n.",
       "meaning": {
-        "zh": "打哈欠"
-      }
+        "zh": "vi. 打哈欠；n. 哈欠",
+        "ja": "vi. あくびをする；n. あくび"
+      },
+      "syllables": [
+        "yawn"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 295,
       "word": "yield",
-      "partOfSpeech": "vi.(to)",
+      "partOfSpeech": "vi. / n.",
       "meaning": {
-        "zh": "屈服于；让出，放弃n.产量"
-      }
+        "zh": "vi. 屈服 / 让出 / 放弃；n. 产量",
+        "ja": "vi. 屈する / 譲る / 産出する；n. 収量"
+      },
+      "syllables": [
+        "yield"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 296,
       "word": "zone",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "地区，区域"
-      }
+        "zh": "n. 地区 / 区域 / 地带",
+        "ja": "n. 区域 / 地帯 / ゾーン"
+      },
+      "syllables": [
+        "zone"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 297,
       "word": "strategy",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "战略，策略"
-      }
+        "zh": "n. 战略 / 策略",
+        "ja": "n. 戦略 / 策略"
+      },
+      "syllables": [
+        "strat",
+        "e",
+        "gy"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 298,
       "word": "strategic",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "战略（上）的，关键的"
-      }
+        "zh": "adj. 战略上的 / 关键的",
+        "ja": "adj. 戦略上の / 重要な"
+      },
+      "syllables": [
+        "stra",
+        "te",
+        "gic"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 299,
       "word": "tense",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / v. / n.",
       "meaning": {
-        "zh": "紧张的v.拉紧n.时态"
-      }
+        "zh": "adj. 紧张的；v. 拉紧；n. 时态",
+        "ja": "adj. 緊張した；v. 緊張させる；n. 時制"
+      },
+      "syllables": [
+        "tense"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 300,
       "word": "tension",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "紧张（状态），张力"
-      }
+        "zh": "n. 紧张 / 张力",
+        "ja": "n. 緊張 / 張力"
+      },
+      "syllables": [
+        "ten",
+        "sion"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 301,
       "word": "avenue",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "林荫道，大街"
-      }
+        "zh": "n. 大街 / 林荫道 / 途径",
+        "ja": "n. 大通り / 並木道 / 手段"
+      },
+      "syllables": [
+        "av",
+        "e",
+        "nue"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 302,
       "word": "available",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "现成可用的；可得到的"
-      }
+        "zh": "adj. 可用的 / 可得到的 / 有空的",
+        "ja": "adj. 利用できる / 入手できる / 空いている"
+      },
+      "syllables": [
+        "a",
+        "vail",
+        "a",
+        "ble"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 303,
       "word": "comparable",
-      "partOfSpeech": "a.(with,to)",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "可比较的，类似的"
-      }
+        "zh": "adj. 可比较的 / 类似的",
+        "ja": "adj. 比較できる / 類似した"
+      },
+      "syllables": [
+        "com",
+        "pa",
+        "ra",
+        "ble"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 304,
       "word": "comparative",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "比较的，相对的"
-      }
+        "zh": "adj. 比较的 / 相对的",
+        "ja": "adj. 比較の / 相対的な"
+      },
+      "syllables": [
+        "com",
+        "par",
+        "a",
+        "tive"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 305,
       "word": "dash",
-      "partOfSpeech": "vi.",
+      "partOfSpeech": "vi. / n.",
       "meaning": {
-        "zh": "猛冲，飞奔"
-      }
+        "zh": "vi. 猛冲 / 飞奔；n. 猛冲 / 破折号",
+        "ja": "vi. 突進する / 駆ける；n. 突進 / ダッシュ / ダッシュ記号"
+      },
+      "syllables": [
+        "dash"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 306,
       "word": "data",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "数据，资料"
-      }
+        "zh": "n. 数据 / 资料",
+        "ja": "n. データ / 資料"
+      },
+      "syllables": [
+        "da",
+        "ta"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 307,
       "word": "dive",
-      "partOfSpeech": "vi.",
+      "partOfSpeech": "vi. / n.",
       "meaning": {
-        "zh": "跳水，潜水"
-      }
+        "zh": "vi. 跳水 / 潜水；n. 潜水 / 俯冲",
+        "ja": "vi. 飛び込む / 潜る；n. ダイビング / 急降下"
+      },
+      "syllables": [
+        "dive"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 308,
       "word": "diverse",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "不同的，多种多样的"
-      }
+        "zh": "adj. 不同的 / 多种多样的",
+        "ja": "adj. 多様な / さまざまな"
+      },
+      "syllables": [
+        "di",
+        "verse"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 309,
       "word": "entitle",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "给...权利，给...资格"
-      }
+        "zh": "vt. 给……权利 / 给……资格 / 命名",
+        "ja": "vt. 権利を与える / 資格を与える / 題名をつける"
+      },
+      "syllables": [
+        "en",
+        "ti",
+        "tle"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 310,
       "word": "regulate",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "管理，调节"
-      }
+        "zh": "vt. 管理 / 调节 / 控制",
+        "ja": "vt. 規制する / 調整する / 管理する"
+      },
+      "syllables": [
+        "reg",
+        "u",
+        "late"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 311,
       "word": "release",
-      "partOfSpeech": "vt./n.",
+      "partOfSpeech": "vt. / n.",
       "meaning": {
-        "zh": "释放，排放；解释解脱"
-      }
+        "zh": "vt. 释放 / 排放 / 发布；n. 释放 / 解脱",
+        "ja": "vt. 解放する / 放出する / 発表する；n. 解放 / 発売"
+      },
+      "syllables": [
+        "re",
+        "lease"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 312,
       "word": "exaggerate",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "夸大，夸张"
-      }
+        "zh": "v. 夸大 / 夸张",
+        "ja": "v. 誇張する / 大げさに言う"
+      },
+      "syllables": [
+        "ex",
+        "ag",
+        "ger",
+        "ate"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 313,
       "word": "evil",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / n.",
       "meaning": {
-        "zh": "邪恶的，坏的"
-      }
+        "zh": "adj. 邪恶的 / 坏的；n. 邪恶 / 祸害",
+        "ja": "adj. 邪悪な / 悪い；n. 悪 / 災い"
+      },
+      "syllables": [
+        "e",
+        "vil"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 314,
       "word": "shrink",
       "partOfSpeech": "vi.",
       "meaning": {
-        "zh": "起皱，收缩；退缩"
-      }
+        "zh": "vi. 收缩 / 起皱 / 退缩",
+        "ja": "vi. 縮む / しわになる / ひるむ"
+      },
+      "syllables": [
+        "shrink"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 315,
       "word": "subtract",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "减（去）"
-      }
+        "zh": "v. 减去 / 扣除",
+        "ja": "v. 引く / 差し引く"
+      },
+      "syllables": [
+        "sub",
+        "tract"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 316,
       "word": "suburb",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "市郊"
-      }
+        "zh": "n. 市郊 / 郊区",
+        "ja": "n. 郊外"
+      },
+      "syllables": [
+        "sub",
+        "urb"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 317,
       "word": "subway",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "地铁"
-      }
+        "zh": "n. 地铁 / 地下通道",
+        "ja": "n. 地下鉄 / 地下道"
+      },
+      "syllables": [
+        "sub",
+        "way"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 318,
       "word": "survey",
-      "partOfSpeech": "n./vt.",
+      "partOfSpeech": "n. / vt.",
       "meaning": {
-        "zh": "调查，勘测"
-      }
+        "zh": "n. 调查 / 勘测；vt. 调查 / 测量",
+        "ja": "n. 調査 / 測量；vt. 調査する / 測量する"
+      },
+      "syllables": [
+        "sur",
+        "vey"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 319,
       "word": "wealthy",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "富裕的"
-      }
+        "zh": "adj. 富裕的 / 富有的",
+        "ja": "adj. 裕福な / 富んだ"
+      },
+      "syllables": [
+        "wealth",
+        "y"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 320,
       "word": "adjust",
       "partOfSpeech": "v.",
       "meaning": {
-        "zh": "调整，调节"
-      }
+        "zh": "v. 调整 / 调节 / 适应",
+        "ja": "v. 調整する / 調節する / 適応する"
+      },
+      "syllables": [
+        "ad",
+        "just"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 321,
       "word": "attach",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "系，贴；使附属"
-      }
+        "zh": "vt. 系上 / 贴上 / 使附属",
+        "ja": "vt. 取り付ける / 貼る / 付属させる"
+      },
+      "syllables": [
+        "at",
+        "tach"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 322,
       "word": "profit",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "利润，益处；v.有益于，有利于"
-      }
+        "zh": "n. 利润 / 益处；v. 有益于 / 获利",
+        "ja": "n. 利益 / 利潤；v. 利益を得る / 役に立つ"
+      },
+      "syllables": [
+        "prof",
+        "it"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 323,
       "word": "profitable",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "有利可图的"
-      }
+        "zh": "adj. 有利可图的 / 有益的",
+        "ja": "adj. 利益の出る / 有益な"
+      },
+      "syllables": [
+        "prof",
+        "it",
+        "a",
+        "ble"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 324,
       "word": "slope",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / v.",
       "meaning": {
-        "zh": "斜坡，斜面"
-      }
+        "zh": "n. 斜坡 / 斜面；v. 倾斜",
+        "ja": "n. 斜面 / 坂；v. 傾斜する"
+      },
+      "syllables": [
+        "slope"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 325,
       "word": "reinforce",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "增强，加强"
-      }
+        "zh": "vt. 增强 / 加强 / 增援",
+        "ja": "vt. 強化する / 補強する / 増援する"
+      },
+      "syllables": [
+        "re",
+        "in",
+        "force"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 326,
       "word": "reject",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "拒绝"
-      }
+        "zh": "vt. 拒绝 / 排斥 / 驳回",
+        "ja": "vt. 拒否する / 却下する / 排除する"
+      },
+      "syllables": [
+        "re",
+        "ject"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 327,
       "word": "fatal",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "致命的；重大的"
-      }
+        "zh": "adj. 致命的 / 重大的 / 毁灭性的",
+        "ja": "adj. 致命的な / 重大な / 破滅的な"
+      },
+      "syllables": [
+        "fa",
+        "tal"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 328,
       "word": "fate",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "命运"
-      }
+        "zh": "n. 命运 / 结局",
+        "ja": "n. 運命 / 結末"
+      },
+      "syllables": [
+        "fate"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 329,
       "word": "humble",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "谦逊的；谦虚的"
-      }
+        "zh": "adj. 谦逊的 / 卑微的 / 简陋的",
+        "ja": "adj. 謙虚な / 卑しい / 質素な"
+      },
+      "syllables": [
+        "hum",
+        "ble"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 330,
       "word": "illegal",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "不合法的，非法的"
-      }
+        "zh": "adj. 非法的 / 不合法的",
+        "ja": "adj. 違法の / 不法な"
+      },
+      "syllables": [
+        "il",
+        "le",
+        "gal"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 331,
       "word": "award",
-      "partOfSpeech": "vt.",
+      "partOfSpeech": "vt. / n.",
       "meaning": {
-        "zh": "授予，判给n.奖品，奖金"
-      }
+        "zh": "vt. 授予 / 判给；n. 奖品 / 奖金",
+        "ja": "vt. 授与する / 与える；n. 賞 / 賞金"
+      },
+      "syllables": [
+        "a",
+        "ward"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 332,
       "word": "aware",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "意识到"
-      }
+        "zh": "adj. 意识到的 / 知道的",
+        "ja": "adj. 気づいている / 認識している"
+      },
+      "syllables": [
+        "a",
+        "ware"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 333,
       "word": "column",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "柱，圆柱；栏，专栏"
-      }
+        "zh": "n. 柱 / 栏 / 专栏",
+        "ja": "n. 柱 / 欄 / コラム"
+      },
+      "syllables": [
+        "col",
+        "umn"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 334,
       "word": "comedy",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "喜剧"
-      }
+        "zh": "n. 喜剧",
+        "ja": "n. 喜劇 / コメディー"
+      },
+      "syllables": [
+        "com",
+        "e",
+        "dy"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 335,
       "word": "dumb",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "哑的；沉默的"
-      }
+        "zh": "adj. 哑的 / 沉默的 / 愚蠢的",
+        "ja": "adj. 口のきけない / 無言の / 愚かな"
+      },
+      "syllables": [
+        "dumb"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 336,
       "word": "dump",
-      "partOfSpeech": "vt.",
+      "partOfSpeech": "vt. / n.",
       "meaning": {
-        "zh": "倾卸，倾倒"
-      }
+        "zh": "vt. 倾倒 / 抛弃；n. 垃圾场",
+        "ja": "vt. 投棄する / 捨てる；n. ごみ捨て場"
+      },
+      "syllables": [
+        "dump"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 337,
       "word": "deaf",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "聋的；不愿听的"
-      }
+        "zh": "adj. 聋的 / 不愿听的",
+        "ja": "adj. 耳が聞こえない / 聞こうとしない"
+      },
+      "syllables": [
+        "deaf"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 338,
       "word": "decorate",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "装饰，装璜"
-      }
+        "zh": "vt. 装饰 / 装潢 / 授勋",
+        "ja": "vt. 飾る / 装飾する / 勲章を授ける"
+      },
+      "syllables": [
+        "dec",
+        "o",
+        "rate"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 339,
       "word": "principal",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / n.",
       "meaning": {
-        "zh": "最重要的n.负责人，校长"
-      }
+        "zh": "adj. 最重要的 / 主要的；n. 负责人 / 校长",
+        "ja": "adj. 主要な / 最も重要な；n. 責任者 / 校長"
+      },
+      "syllables": [
+        "prin",
+        "ci",
+        "pal"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 340,
       "word": "principle",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "原则，原理"
-      }
+        "zh": "n. 原则 / 原理",
+        "ja": "n. 原則 / 原理"
+      },
+      "syllables": [
+        "prin",
+        "ci",
+        "ple"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 341,
       "word": "prior",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "优先的，在前的"
-      }
+        "zh": "adj. 优先的 / 在前的",
+        "ja": "adj. 以前の / 優先する"
+      },
+      "syllables": [
+        "pri",
+        "or"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 342,
       "word": "priority",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "优先，重点"
-      }
+        "zh": "n. 优先 / 重点 / 优先权",
+        "ja": "n. 優先 / 重点 / 優先権"
+      },
+      "syllables": [
+        "pri",
+        "or",
+        "i",
+        "ty"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 343,
       "word": "prohibit",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "禁止，不准"
-      }
+        "zh": "vt. 禁止 / 不准",
+        "ja": "vt. 禁止する / 禁じる"
+      },
+      "syllables": [
+        "pro",
+        "hib",
+        "it"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 344,
       "word": "remarkable",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "值得注意的，异常的，非凡的"
-      }
+        "zh": "adj. 值得注意的 / 异常的 / 非凡的",
+        "ja": "adj. 注目すべき / 並外れた / 非凡な"
+      },
+      "syllables": [
+        "re",
+        "mark",
+        "a",
+        "ble"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 345,
       "word": "remedy",
-      "partOfSpeech": "n./vt.",
+      "partOfSpeech": "n. / vt.",
       "meaning": {
-        "zh": "补救，医治，治疗"
-      }
+        "zh": "n. 补救 / 治疗；vt. 补救 / 医治",
+        "ja": "n. 救済策 / 治療法；vt. 改善する / 治療する"
+      },
+      "syllables": [
+        "rem",
+        "e",
+        "dy"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 346,
       "word": "repetition",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "重复，反复"
-      }
+        "zh": "n. 重复 / 反复",
+        "ja": "n. 繰り返し / 反復"
+      },
+      "syllables": [
+        "rep",
+        "e",
+        "ti",
+        "tion"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 348,
       "word": "undertake",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "承担，着手做；同意，答应"
-      }
+        "zh": "vt. 承担 / 着手做 / 答应",
+        "ja": "vt. 引き受ける / 着手する / 約束する"
+      },
+      "syllables": [
+        "un",
+        "der",
+        "take"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 349,
       "word": "unique",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "唯一的，独特的"
-      }
+        "zh": "adj. 唯一的 / 独特的",
+        "ja": "adj. 唯一の / 独特な"
+      },
+      "syllables": [
+        "u",
+        "nique"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 350,
       "word": "obstacle",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "障碍（物），妨碍"
-      }
+        "zh": "n. 障碍 / 妨碍物",
+        "ja": "n. 障害 / 妨げ"
+      },
+      "syllables": [
+        "ob",
+        "sta",
+        "cle"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 351,
       "word": "odd",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "奇特的，古怪的；奇数的"
-      }
+        "zh": "adj. 奇特的 / 古怪的 / 奇数的",
+        "ja": "adj. 奇妙な / 変な / 奇数の"
+      },
+      "syllables": [
+        "odd"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 352,
       "word": "omit",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "省略"
-      }
+        "zh": "vt. 省略 / 遗漏",
+        "ja": "vt. 省略する / 抜かす"
+      },
+      "syllables": [
+        "o",
+        "mit"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 353,
       "word": "opponent",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "敌手，对手"
-      }
+        "zh": "n. 对手 / 敌手",
+        "ja": "n. 相手 / 対戦相手 / 反対者"
+      },
+      "syllables": [
+        "op",
+        "po",
+        "nent"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 354,
       "word": "opportunity",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "机会，时机"
-      }
+        "zh": "n. 机会 / 时机",
+        "ja": "n. 機会 / 好機"
+      },
+      "syllables": [
+        "op",
+        "por",
+        "tu",
+        "ni",
+        "ty"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 355,
       "word": "orchestra",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "管弦乐队"
-      }
+        "zh": "n. 管弦乐队",
+        "ja": "n. オーケストラ / 管弦楽団"
+      },
+      "syllables": [
+        "or",
+        "ches",
+        "tra"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 356,
       "word": "semester",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "学期；半年"
-      }
+        "zh": "n. 学期 / 半年",
+        "ja": "n. 学期 / 半年"
+      },
+      "syllables": [
+        "se",
+        "mes",
+        "ter"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 357,
       "word": "semiconductor",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "半导体"
-      }
+        "zh": "n. 半导体",
+        "ja": "n. 半導体"
+      },
+      "syllables": [
+        "sem",
+        "i",
+        "con",
+        "duc",
+        "tor"
+      ],
+      "stressIndex": 3
     },
     {
       "sourceNumber": 358,
       "word": "seminar",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "研讨会"
-      }
+        "zh": "n. 研讨会 / 研修班",
+        "ja": "n. セミナー / 研究会"
+      },
+      "syllables": [
+        "sem",
+        "i",
+        "nar"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 359,
       "word": "terminal",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / n.",
       "meaning": {
-        "zh": "末端的，极限的n.终点"
-      }
+        "zh": "adj. 末端的 / 终点的；n. 终点 / 终端",
+        "ja": "adj. 終端の / 末端の；n. 終点 / 端末"
+      },
+      "syllables": [
+        "ter",
+        "mi",
+        "nal"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 360,
       "word": "territory",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "领土"
-      }
+        "zh": "n. 领土 / 领域 / 地区",
+        "ja": "n. 領土 / 領域 / 地域"
+      },
+      "syllables": [
+        "ter",
+        "ri",
+        "to",
+        "ry"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 361,
       "word": "approximate",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / v.",
       "meaning": {
-        "zh": "大概的，大约v.近似"
-      }
+        "zh": "adj. 大概的 / 近似的；v. 接近 / 近似",
+        "ja": "adj. おおよその / 近似の；v. 近似する / 近づく"
+      },
+      "syllables": [
+        "ap",
+        "prox",
+        "i",
+        "mate"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 362,
       "word": "arbitrary",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "随意的，未断的"
-      }
+        "zh": "adj. 随意的 / 武断的",
+        "ja": "adj. 恣意的な / 独断的な"
+      },
+      "syllables": [
+        "ar",
+        "bi",
+        "trar",
+        "y"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 363,
       "word": "architect",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "建筑师"
-      }
+        "zh": "n. 建筑师 / 设计者",
+        "ja": "n. 建築家 / 設計者"
+      },
+      "syllables": [
+        "ar",
+        "chi",
+        "tect"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 364,
       "word": "architecture",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "建筑学"
-      }
+        "zh": "n. 建筑学 / 建筑风格",
+        "ja": "n. 建築学 / 建築様式"
+      },
+      "syllables": [
+        "ar",
+        "chi",
+        "tec",
+        "ture"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 365,
       "word": "biology",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "生物学"
-      }
+        "zh": "n. 生物学",
+        "ja": "n. 生物学"
+      },
+      "syllables": [
+        "bi",
+        "ol",
+        "o",
+        "gy"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 366,
       "word": "geography",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "地理（学）"
-      }
+        "zh": "n. 地理 / 地理学",
+        "ja": "n. 地理 / 地理学"
+      },
+      "syllables": [
+        "ge",
+        "og",
+        "ra",
+        "phy"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 367,
       "word": "geology",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "地质学"
-      }
+        "zh": "n. 地质学",
+        "ja": "n. 地質学"
+      },
+      "syllables": [
+        "ge",
+        "ol",
+        "o",
+        "gy"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 368,
       "word": "geometry",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "几何（学）"
-      }
+        "zh": "n. 几何 / 几何学",
+        "ja": "n. 幾何 / 幾何学"
+      },
+      "syllables": [
+        "ge",
+        "om",
+        "e",
+        "try"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 369,
       "word": "arithmetic",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "算术"
-      }
+        "zh": "n. 算术",
+        "ja": "n. 算数 / 算術"
+      },
+      "syllables": [
+        "a",
+        "rith",
+        "me",
+        "tic"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 370,
       "word": "algebra",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "代数"
-      }
+        "zh": "n. 代数",
+        "ja": "n. 代数"
+      },
+      "syllables": [
+        "al",
+        "ge",
+        "bra"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 371,
       "word": "entertainment",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "娱乐；招待，款待"
-      }
+        "zh": "n. 娱乐 / 招待 / 款待",
+        "ja": "n. 娯楽 / 接待 / もてなし"
+      },
+      "syllables": [
+        "en",
+        "ter",
+        "tain",
+        "ment"
+      ],
+      "stressIndex": 2
     },
     {
       "sourceNumber": 372,
       "word": "enthusiasm",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "热情，热心"
-      }
+        "zh": "n. 热情 / 热心",
+        "ja": "n. 熱意 / 情熱"
+      },
+      "syllables": [
+        "en",
+        "thu",
+        "si",
+        "asm"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 373,
       "word": "entry",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "进入，入口处；参赛的人（或物）"
-      }
+        "zh": "n. 进入 / 入口 / 参赛者",
+        "ja": "n. 入場 / 入口 / 応募作品"
+      },
+      "syllables": [
+        "en",
+        "try"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 374,
       "word": "environment",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "环境"
-      }
+        "zh": "n. 环境",
+        "ja": "n. 環境"
+      },
+      "syllables": [
+        "en",
+        "vi",
+        "ron",
+        "ment"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 375,
       "word": "episode",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "插曲，片段"
-      }
+        "zh": "n. 插曲 / 片段 / 一集",
+        "ja": "n. エピソード / 挿話 / 一回分"
+      },
+      "syllables": [
+        "ep",
+        "i",
+        "sode"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 376,
       "word": "equation",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "方程（式）"
-      }
+        "zh": "n. 方程 / 方程式",
+        "ja": "n. 方程式"
+      },
+      "syllables": [
+        "e",
+        "qua",
+        "tion"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 377,
       "word": "restrain",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "阻止，抑制"
-      }
+        "zh": "vt. 阻止 / 抑制 / 控制",
+        "ja": "vt. 抑える / 制止する / 抑制する"
+      },
+      "syllables": [
+        "re",
+        "strain"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 378,
       "word": "restraint",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "抑制，限制"
-      }
+        "zh": "n. 抑制 / 限制 / 克制",
+        "ja": "n. 抑制 / 制限 / 自制"
+      },
+      "syllables": [
+        "re",
+        "straint"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 379,
       "word": "resume",
-      "partOfSpeech": "v.（",
+      "partOfSpeech": "v. / n.",
       "meaning": {
-        "zh": "中断后）重新开始"
-      }
+        "zh": "v. 重新开始 / 恢复；n. 简历",
+        "ja": "v. 再開する / 回復する；n. 履歴書"
+      },
+      "syllables": [
+        "re",
+        "sume"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 380,
       "word": "severe",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "严重的"
-      }
+        "zh": "adj. 严重的 / 严厉的 / 剧烈的",
+        "ja": "adj. 深刻な / 厳しい / 激しい"
+      },
+      "syllables": [
+        "se",
+        "vere"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 381,
       "word": "sexual",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "性的"
-      }
+        "zh": "adj. 性的 / 性别的",
+        "ja": "adj. 性の / 性的な"
+      },
+      "syllables": [
+        "sex",
+        "u",
+        "al"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 382,
       "word": "simplicity",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "简单；朴素"
-      }
+        "zh": "n. 简单 / 朴素",
+        "ja": "n. 単純さ / 簡素さ"
+      },
+      "syllables": [
+        "sim",
+        "plic",
+        "i",
+        "ty"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 383,
       "word": "simplify",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "简化"
-      }
+        "zh": "vt. 简化",
+        "ja": "vt. 簡単にする / 簡略化する"
+      },
+      "syllables": [
+        "sim",
+        "pli",
+        "fy"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 384,
       "word": "sorrow",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "悲哀，悲痛"
-      }
+        "zh": "n. 悲哀 / 悲痛",
+        "ja": "n. 悲しみ / 悲哀"
+      },
+      "syllables": [
+        "sor",
+        "row"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 385,
       "word": "stuff",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / vt.",
       "meaning": {
-        "zh": "原料，材料vt.填进，塞满"
-      }
+        "zh": "n. 原料 / 材料 / 东西；vt. 填进 / 塞满",
+        "ja": "n. 材料 / 物 / もの；vt. 詰め込む / 満たす"
+      },
+      "syllables": [
+        "stuff"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 386,
       "word": "temporary",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "暂时的，临时的"
-      }
+        "zh": "adj. 暂时的 / 临时的",
+        "ja": "adj. 一時的な / 臨時の"
+      },
+      "syllables": [
+        "tem",
+        "po",
+        "rar",
+        "y"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 387,
       "word": "temptation",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "诱惑，引诱"
-      }
+        "zh": "n. 诱惑 / 引诱",
+        "ja": "n. 誘惑 / 誘い"
+      },
+      "syllables": [
+        "temp",
+        "ta",
+        "tion"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 388,
       "word": "terror",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "恐怖"
-      }
+        "zh": "n. 恐怖 / 恐惧",
+        "ja": "n. 恐怖 / 恐れ"
+      },
+      "syllables": [
+        "ter",
+        "ror"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 389,
       "word": "thrust",
-      "partOfSpeech": "v.",
+      "partOfSpeech": "v. / n.",
       "meaning": {
-        "zh": "挤，推，插"
-      }
+        "zh": "v. 推 / 挤 / 插；n. 推力 / 猛推",
+        "ja": "v. 押す / 突く / 差し込む；n. 推力 / 突き"
+      },
+      "syllables": [
+        "thrust"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 390,
       "word": "treaty",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "条约，协定"
-      }
+        "zh": "n. 条约 / 协定",
+        "ja": "n. 条約 / 協定"
+      },
+      "syllables": [
+        "trea",
+        "ty"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 391,
       "word": "arise",
       "partOfSpeech": "vi.",
       "meaning": {
-        "zh": "产生，出现，发生；起身"
-      }
+        "zh": "vi. 产生 / 出现 / 起身",
+        "ja": "vi. 生じる / 現れる / 起き上がる"
+      },
+      "syllables": [
+        "a",
+        "rise"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 392,
       "word": "arouse",
       "partOfSpeech": "vt.",
       "meaning": {
-        "zh": "引起，激起；唤醒"
-      }
+        "zh": "vt. 引起 / 激起 / 唤醒",
+        "ja": "vt. 引き起こす / 刺激する / 目覚めさせる"
+      },
+      "syllables": [
+        "a",
+        "rouse"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 393,
       "word": "burden",
-      "partOfSpeech": "n.",
+      "partOfSpeech": "n. / vt.",
       "meaning": {
-        "zh": "重担，负荷"
-      }
+        "zh": "n. 重担 / 负荷；vt. 使负担",
+        "ja": "n. 重荷 / 負担；vt. 負担をかける"
+      },
+      "syllables": [
+        "bur",
+        "den"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 394,
       "word": "bureau",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "局，办事处"
-      }
+        "zh": "n. 局 / 办事处",
+        "ja": "n. 局 / 事務所"
+      },
+      "syllables": [
+        "bu",
+        "reau"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 395,
       "word": "marvelous",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "奇迹般的，惊人的"
-      }
+        "zh": "adj. 奇妙的 / 惊人的 / 极好的",
+        "ja": "adj. 驚くべき / すばらしい / 不思議な"
+      },
+      "syllables": [
+        "mar",
+        "vel",
+        "ous"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 396,
       "word": "massive",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj.",
       "meaning": {
-        "zh": "大的，大量的，大块的"
-      }
+        "zh": "adj. 巨大的 / 大量的 / 大块的",
+        "ja": "adj. 巨大な / 大量の / 重厚な"
+      },
+      "syllables": [
+        "mas",
+        "sive"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 397,
       "word": "mature",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / v.",
       "meaning": {
-        "zh": "成熟的"
-      }
+        "zh": "adj. 成熟的；v. 成熟",
+        "ja": "adj. 成熟した；v. 成熟する"
+      },
+      "syllables": [
+        "ma",
+        "ture"
+      ],
+      "stressIndex": 1
     },
     {
       "sourceNumber": 398,
       "word": "maximum",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / n.",
       "meaning": {
-        "zh": "最高的，最大的"
-      }
+        "zh": "adj. 最高的 / 最大的；n. 最大量",
+        "ja": "adj. 最大の / 最高の；n. 最大値"
+      },
+      "syllables": [
+        "max",
+        "i",
+        "mum"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 399,
       "word": "minimum",
-      "partOfSpeech": "a.",
+      "partOfSpeech": "adj. / n.",
       "meaning": {
-        "zh": "最低的，最小的"
-      }
+        "zh": "adj. 最低的 / 最小的；n. 最小量",
+        "ja": "adj. 最小の / 最低の；n. 最小値"
+      },
+      "syllables": [
+        "min",
+        "i",
+        "mum"
+      ],
+      "stressIndex": 0
     },
     {
       "sourceNumber": 400,
       "word": "nonsense",
       "partOfSpeech": "n.",
       "meaning": {
-        "zh": "胡说，冒失的行动"
-      }
+        "zh": "n. 胡说 / 荒唐事 / 无意义的话",
+        "ja": "n. ナンセンス / でたらめ / 無意味なこと"
+      },
+      "syllables": [
+        "non",
+        "sense"
+      ],
+      "stressIndex": 0
     }
   ]
 }

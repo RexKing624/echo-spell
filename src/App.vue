@@ -57,12 +57,29 @@
               </svg>
             </button>
             <p class="listen-label">{{ t.listen }}</p>
-            <button class="slow-toggle" :class="{ active: slowMode }" type="button" @click="toggleSlowMode">{{ slowMode ? t.slowOn : t.slowOff }}</button>
+            <div class="hint-switches">
+              <button class="hint-switch slow-toggle" :class="{ active: slowMode }" type="button" @click="toggleSlowMode">
+                <span class="switch-dot" aria-hidden="true"></span>{{ t.slow }}
+              </button>
+              <button v-if="studyMode === 'learn'" class="hint-switch syllable-toggle" :class="{ active: showSyllables }" type="button" @click="toggleSyllables">
+                {{ t.syllable }}<span class="switch-dot" aria-hidden="true"></span>
+              </button>
+            </div>
             <p class="learning-meaning" :class="{ hidden: !showMeaning }" :aria-hidden="!showMeaning"><span>{{ t.meaning }}</span><strong>{{ currentMeaning }}</strong></p>
             <label class="answer-label" for="answer">{{ t.answerLabel }}</label>
             <div class="answer-wrap">
-              <div v-if="studyMode === 'learn'" class="guided-answer" aria-hidden="true">
-                <span v-for="(letter, letterIndex) in learningLetters" :key="`${letterIndex}-${letter.char}`" :class="`guided-${letter.type}`">{{ letter.char }}</span>
+              <div v-if="studyMode === 'learn'" class="guided-answer" role="note" :aria-label="showSyllables && currentSyllables.length ? syllableAriaLabel : undefined" :aria-hidden="!(showSyllables && currentSyllables.length)">
+                <template v-if="showSyllables && learningSyllableGroups.length">
+                  <template v-for="(group, groupIndex) in learningSyllableGroups" :key="`${group.index}-${group.text}`">
+                    <span class="guided-syllable" :class="{ stressed: group.index === currentStressIndex }">
+                      <span v-for="(letter, letterIndex) in group.letters" :key="`${groupIndex}-${letterIndex}-${letter.char}`" :class="`guided-${letter.type}`">{{ letter.char }}</span>
+                    </span>
+                    <span v-if="groupIndex < learningSyllableGroups.length - 1" class="guided-separator" aria-hidden="true">·</span>
+                  </template>
+                </template>
+                <template v-else>
+                  <span v-for="(letter, letterIndex) in learningLetters" :key="`${letterIndex}-${letter.char}`" :class="`guided-${letter.type}`">{{ letter.char }}</span>
+                </template>
               </div>
               <input id="answer" ref="input" v-model="answer" class="answer-input" :class="{ 'learning-input': studyMode === 'learn' }" type="text" inputmode="text" autocomplete="off" autocapitalize="none" spellcheck="false" :placeholder="studyMode === 'practice' ? t.placeholder : ''" @keyup.enter="handleEnter" />
             </div>
@@ -81,6 +98,11 @@
               <p class="result-kicker">{{ result === 'correct' ? t.correct : errorMessage }}</p>
               <div class="word-result" :aria-label="`${t.correctSpelling} ${current.word}`"><span v-for="(part, i) in diff" :key="i" :class="part.type">{{ part.char }}</span></div>
               <p v-if="current.phonetic" class="phonetic">{{ current.phonetic }}</p>
+              <p v-if="currentSyllables.length && (studyMode === 'practice' || showSyllables)" class="syllable-hint result-syllables" :aria-label="syllableAriaLabel">
+                <template v-for="(syllable, syllableIndex) in currentSyllables" :key="`${syllable}-${syllableIndex}`">
+                  <span :class="{ stressed: syllableIndex === currentStressIndex }">{{ syllable }}</span><i v-if="syllableIndex < currentSyllables.length - 1" aria-hidden="true">·</i>
+                </template>
+              </p>
               <div v-if="studyMode === 'learn' && showMeaning" class="learning-panel">
                 <div><span class="panel-label">{{ t.meaning }}</span><strong>{{ currentMeaning }}</strong></div>
                 <div v-if="currentTip"><span class="panel-label">{{ t.tip }}</span><p>{{ currentTip }}</p></div>
@@ -112,26 +134,26 @@ const copy = {
     localeName: '中文', brandAria: 'EchoSpell 首页', streak: '连对', accuracy: '正确率', mistakes: '错词',
     eyebrow: 'LEARN SPELLING THROUGH LISTENING', titleStart: '听见，然后', titleAccent: '写对。',
     subtitle: '专为“会念但不会写”设计的英语拼写练习。', basic: '基础', advanced: '进阶', challenge: '挑战',
-    playAria: '播放单词发音', listen: '点击播放 · 听清楚这个词', slowOn: '慢速已开', slowOff: '慢速播放',
+    playAria: '播放单词发音', listen: '点击播放 · 听清楚这个词', slow: '慢速',
     answerLabel: '写下你听到的单词', placeholder: 'Type what you hear', skip: '跳过', check: '检查拼写',
     correct: '拼对了！', correctSpelling: '正确拼写', meaning: '意思', tip: '记忆提示', example: '例句',
     restart: '重新练习', next: '下一个单词', dictionary: '当前词库', importJson: '导入词库', wordUnit: '词',
     imported: '已导入', invalidImport: '无法识别有效词汇，请检查文件内容和格式。', legacyDoc: '旧版 .doc 暂时无法在浏览器中可靠读取，请先另存为 .docx 后再导入。', unsupportedFile: '暂不支持这种文件。可导入 JSON、CSV、TSV、TXT、Excel 或 DOCX。',
     unverifiedWarning: '用户导入词库 · 非 EchoSpell 内置，未经校验。拼写、释义和格式可能不准确，请自行核对。',
-    mode: '学习模式', learn: '学习', practice: '练习', showMeaning: '显示意思', hideMeaning: '隐藏意思', backToLibrary: '回到词库练习', footerLocation: '© 2026 日本 / 东京', learningInstruction: ['照着浅色提示完整输入 全部正确后会自动进入下一词'],
+    mode: '学习模式', learn: '学习', practice: '练习', showMeaning: '显示意思', hideMeaning: '隐藏意思', syllable: '音节', syllableAria: '单词音节', backToLibrary: '回到词库练习', footerLocation: '© 2026 日本 / 东京', learningInstruction: ['照着浅色提示完整输入 全部正确后会自动进入下一词'],
     close: '很接近。', missing: '你漏掉了', position: '注意这些字母的位置', retry: '再听一次，注意每个音节。',
   },
   ja: {
     localeName: '日本語', brandAria: 'EchoSpell ホーム', streak: '連続正解', accuracy: '正解率', mistakes: '苦手',
     eyebrow: 'LEARN SPELLING THROUGH LISTENING', titleStart: '聞いて、そして', titleAccent: '書ける。',
     subtitle: '「読めるのに書けない」を解決する英単語スペリング練習。', basic: '基礎', advanced: '応用', challenge: 'チャレンジ',
-    playAria: '英単語の発音を再生', listen: 'タップして、単語をよく聞こう', slowOn: 'ゆっくり再生中', slowOff: 'ゆっくり再生',
+    playAria: '英単語の発音を再生', listen: 'タップして、単語をよく聞こう', slow: '低速',
     answerLabel: '聞こえた英単語を入力してください', placeholder: '聞こえた単語を入力', skip: 'スキップ', check: 'スペルを確認',
     correct: '正解！', correctSpelling: '正しいスペル', meaning: '意味', tip: '覚え方', example: '例文',
     restart: 'もう一度練習', next: '次の単語', dictionary: '単語帳', importJson: '単語帳を読み込む', wordUnit: '語',
     imported: '読み込み完了', invalidImport: '有効な単語を認識できません。ファイルの内容と形式を確認してください。', legacyDoc: '旧形式の .doc はブラウザで正確に読み込めません。.docx 形式で保存してから読み込んでください。', unsupportedFile: 'この形式には未対応です。JSON、CSV、TSV、TXT、Excel、DOCXを利用できます。',
     unverifiedWarning: 'ユーザー読み込み単語帳 · EchoSpell 内蔵ではなく、未検証です。スペル・意味・形式を各自で確認してください。',
-    mode: '学習モード', learn: '学習', practice: '練習', showMeaning: '意味を表示', hideMeaning: '意味を隠す', backToLibrary: '単語帳練習に戻る', footerLocation: '© 2026 日本 / 東京', learningInstruction: ['薄い文字を見ながら最後まで入力 正しく入力すると自動で次へ進みます'],
+    mode: '学習モード', learn: '学習', practice: '練習', showMeaning: '意味を表示', hideMeaning: '意味を隠す', syllable: '音節', syllableAria: '単語の音節', backToLibrary: '単語帳練習に戻る', footerLocation: '© 2026 日本 / 東京', learningInstruction: ['薄い文字を見ながら最後まで入力 正しく入力すると自動で次へ進みます'],
     close: 'もう少しです。', missing: '抜けている文字', position: '文字の位置に注意', retry: 'もう一度聞いて、音節を意識しましょう。',
   },
 }
@@ -153,6 +175,7 @@ const fileInput = ref(null)
 const slowMode = ref(false)
 const studyMode = ref(localStorage.getItem('echospell-mode') || 'learn')
 const showMeaning = ref(localStorage.getItem('echospell-show-meaning') !== 'false')
+const showSyllables = ref(localStorage.getItem('echospell-show-syllables') === 'true')
 const sessionMode = ref('all')
 const customDictionary = ref(readStoredDictionary())
 const selectedDictionaryId = ref(localStorage.getItem('echospell-dictionary') || 'cet4-high-frequency')
@@ -169,6 +192,9 @@ const isLast = computed(() => index.value >= shuffled.value.length - 1)
 const levelLabel = computed(() => sessionMode.value === 'mistakes' ? t.value.mistakes : (t.value[current.value.level] || t.value.basic))
 const currentMeaning = computed(() => localize(current.value.meaning) || '—')
 const currentTip = computed(() => localize(current.value.tip))
+const currentSyllables = computed(() => Array.isArray(current.value.syllables) ? current.value.syllables : [])
+const currentStressIndex = computed(() => Number.isInteger(current.value.stressIndex) ? current.value.stressIndex : null)
+const syllableAriaLabel = computed(() => `${t.value.syllableAria}: ${currentSyllables.value.join(' · ')}`)
 const learningLetters = computed(() => {
   const typed = answer.value
   const target = current.value.word
@@ -185,6 +211,18 @@ const learningLetters = computed(() => {
 
     return { char: targetChar, type: 'remainder' }
   }).filter(letter => letter.char)
+})
+const learningSyllableGroups = computed(() => {
+  if (!currentSyllables.value.length) return []
+  const visibleLetters = learningLetters.value.filter(letter => /[A-Za-z]/.test(letter.char))
+  let cursor = 0
+
+  return currentSyllables.value.map((syllable, index) => {
+    const letterCount = String(syllable).replace(/[^A-Za-z]/g, '').length
+    const letters = visibleLetters.slice(cursor, cursor + letterCount)
+    cursor += letterCount
+    return { index, text: syllable, letters }
+  }).filter(group => group.letters.length)
 })
 let learningAdvanceTimer
 
@@ -222,6 +260,18 @@ function dictionaryName(dictionary) {
   return localize(dictionary.name) || dictionary.id
 }
 
+function normalizeSyllables(value) {
+  if (!Array.isArray(value)) return []
+  return value.map(item => String(item ?? '').trim()).filter(Boolean)
+}
+
+function normalizeStressIndex(value, syllables = []) {
+  if (value === null || value === undefined || String(value).trim() === '') return null
+  const index = Number(value)
+  if (!Number.isInteger(index)) return null
+  return index >= 0 && index < syllables.length ? index : null
+}
+
 function normalizeWord(item) {
   const source = typeof item === 'string' ? { word: item } : item
   if (!source || typeof source.word !== 'string') return null
@@ -229,9 +279,13 @@ function normalizeWord(item) {
   if (!word || !/^[A-Za-z][A-Za-z '\-]*$/.test(word)) return null
   const meaning = typeof source.meaning === 'string' ? { zh: source.meaning } : (source.meaning || {})
   const tip = typeof source.tip === 'string' ? { zh: source.tip } : (source.tip || {})
+  const syllables = normalizeSyllables(source.syllables)
+  const stressIndex = normalizeStressIndex(source.stressIndex, syllables)
   return {
     word,
     phonetic: source.phonetic || '',
+    syllables,
+    stressIndex,
     meaning,
     tip,
     example: source.example || '',
@@ -301,6 +355,11 @@ function toggleSlowMode() {
 function toggleMeaning() {
   showMeaning.value = !showMeaning.value
   localStorage.setItem('echospell-show-meaning', String(showMeaning.value))
+}
+
+function toggleSyllables() {
+  showSyllables.value = !showSyllables.value
+  localStorage.setItem('echospell-show-syllables', String(showSyllables.value))
 }
 
 function speak(slow = slowMode.value) {
@@ -463,9 +522,17 @@ main { width: min(100% - 48px, 1280px); margin: 0 auto; }
 .sound-rings i:nth-child(2) { inset: -8px; }
 .sound-rings i:nth-child(3) { inset: -16px; }
 .listen-label { margin: 18px 0 6px; font-size: 16px; color: #66716d; }
-.slow-toggle { border: 0; background: transparent; color: var(--green); font-size: 15px; font-weight: 600; padding: 5px 10px; }
-.slow-toggle.active { color: var(--orange); }
-.learning-meaning { width: 100%; margin: 14px 0 0; padding: 12px 16px; border-radius: 12px; background: #f3f0e8; color: #4d5a55; font-size: 15px; line-height: 1.55; text-align: left; }
+.hint-switches { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 4px 0 0; }
+.hint-switch { min-width: 64px; height: 30px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; border: 1px solid rgba(24,79,67,.18); border-radius: 999px; background: #e7efe9; color: var(--green); font-size: 14px; font-weight: 800; padding: 0 13px; transition: background .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease; }
+.hint-switch.active { background: var(--orange); border-color: var(--orange); color: white; box-shadow: 0 6px 16px rgba(226,100,61,.16); }
+.switch-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(24,79,67,.35); }
+.hint-switch.active .switch-dot { background: #a13e2b; box-shadow: 0 0 0 3px rgba(255,255,255,.22); }
+.syllable-hint { display: inline-flex; align-items: baseline; justify-content: center; flex-wrap: wrap; gap: 7px; margin: 4px 0 0; color: #66716d; font-size: 16px; letter-spacing: .04em; }
+.syllable-hint span { font-weight: 500; }
+.syllable-hint .stressed { color: var(--green); font-weight: 800; }
+.syllable-hint i { color: #a7aea9; font-style: normal; font-weight: 700; }
+.result-syllables { margin: -14px 0 20px; }
+.learning-meaning { width: 100%; margin: 14px 0 0; padding: 12px 16px; border-radius: 12px; background: #f3f0e8; color: #4d5a55; font-size: 15px; line-height: 1.55; text-align: center; }
 .learning-meaning.hidden { visibility: hidden; pointer-events: none; }
 .learning-meaning span { display: block; margin-bottom: 4px; color: #7a8580; font-size: 12px; font-weight: 700; letter-spacing: .12em; }
 .learning-meaning strong { color: var(--ink); font-size: 17px; }
@@ -475,6 +542,9 @@ main { width: min(100% - 48px, 1280px); margin: 0 auto; }
 .answer-input:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(24,79,67,.1); }
 .answer-input::placeholder { color: #a6aaa6; letter-spacing: 0; font-size: 17px; }
 .guided-answer { position: absolute; inset: 0; z-index: 1; display: flex; align-items: center; justify-content: center; padding: 14px 18px; color: var(--ink); font-size: 24px; letter-spacing: .14em; pointer-events: none; white-space: pre; }
+.guided-syllable { display: inline-flex; align-items: center; justify-content: center; }
+.guided-syllable.stressed .guided-remainder { color: rgba(24,79,67,.46); font-weight: 700; }
+.guided-separator { color: rgba(24,79,67,.23); margin: 0 .12em; font-weight: 700; }
 .guided-typed { color: var(--ink); }
 .guided-wrong { color: #d84b32; font-weight: 700; }
 .guided-remainder { color: rgba(24,79,67,.25); }
@@ -533,7 +603,8 @@ main { width: min(100% - 48px, 1280px); margin: 0 auto; }
   .sound-button { width: 78px; height: 78px; min-width: 78px; min-height: 78px; margin-top: 0; }
   .play-icon { width: 26px; height: 26px; transform: translateX(2px); }
   .listen-label, .answer-label { font-size: 16px; }
-  .slow-toggle, .learning-instruction { font-size: 15px; }
+  .hint-switch, .learning-instruction { font-size: 15px; }
+  .syllable-hint { font-size: 15px; gap: 6px; }
   .answer-input, .guided-answer { font-size: 22px; letter-spacing: .1em; }
   .actions { grid-template-columns: 1fr; }
   .actions .secondary { order: 2; }

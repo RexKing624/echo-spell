@@ -3,6 +3,8 @@ const MEANING_HEADERS = ['meaning', 'definition', '释义', '意思', '中文', 
 const PHONETIC_HEADERS = ['phonetic', 'pronunciation', '音标', '発音記号'];
 const EXAMPLE_HEADERS = ['example', 'sentence', '例句', '例文'];
 const TIP_HEADERS = ['tip', 'note', '提示', '记忆', 'メモ', '覚え方'];
+const SYLLABLE_HEADERS = ['syllables', 'syllable', '音节', '音節'];
+const STRESS_HEADERS = ['stressindex', 'stress_index', 'stress', '重音', 'アクセント'];
 
 function cleanHeader(value) {
   return String(value ?? '').trim().toLowerCase();
@@ -12,13 +14,32 @@ function headerIndex(row, candidates) {
   return row.findIndex(cell => candidates.includes(cleanHeader(cell)));
 }
 
-function normalizeRow(word, meaning = '', phonetic = '', example = '', tip = '') {
+function normalizeSyllables(value) {
+  if (Array.isArray(value)) {
+    return value.map(item => String(item ?? '').trim()).filter(Boolean);
+  }
+  if (typeof value !== 'string') return [];
+  return value.split(/[-·/\s]+/).map(item => item.trim()).filter(Boolean);
+}
+
+function normalizeStressIndex(value, syllables = []) {
+  if (value === null || value === undefined || String(value).trim() === '') return null;
+  const index = Number(value);
+  if (!Number.isInteger(index)) return null;
+  return index >= 0 && index < syllables.length ? index : null;
+}
+
+function normalizeRow(word, meaning = '', phonetic = '', example = '', tip = '', syllablesValue = '', stressIndexValue = null) {
   const cleanWord = String(word ?? '').trim();
   if (!/^[A-Za-z][A-Za-z '\-]*$/.test(cleanWord)) return null;
+  const syllables = normalizeSyllables(syllablesValue);
+  const stressIndex = normalizeStressIndex(stressIndexValue, syllables);
   return {
     word: cleanWord,
     meaning: meaning ? { zh: String(meaning).trim() } : {},
     phonetic: String(phonetic ?? '').trim(),
+    syllables,
+    stressIndex,
     example: String(example ?? '').trim(),
     tip: tip ? { zh: String(tip).trim() } : {},
     level: 'basic'
@@ -36,6 +57,8 @@ function rowsToWords(rows) {
   const phoneticColumn = hasHeader ? headerIndex(header, PHONETIC_HEADERS) : 2;
   const exampleColumn = hasHeader ? headerIndex(header, EXAMPLE_HEADERS) : 3;
   const tipColumn = hasHeader ? headerIndex(header, TIP_HEADERS) : 4;
+  const syllableColumn = hasHeader ? headerIndex(header, SYLLABLE_HEADERS) : 5;
+  const stressColumn = hasHeader ? headerIndex(header, STRESS_HEADERS) : 6;
   const start = hasHeader ? 1 : 0;
 
   return usableRows.slice(start).map(row => normalizeRow(
@@ -43,20 +66,23 @@ function rowsToWords(rows) {
     meaningColumn >= 0 ? row[meaningColumn] : '',
     phoneticColumn >= 0 ? row[phoneticColumn] : '',
     exampleColumn >= 0 ? row[exampleColumn] : '',
-    tipColumn >= 0 ? row[tipColumn] : ''
+    tipColumn >= 0 ? row[tipColumn] : '',
+    syllableColumn >= 0 ? row[syllableColumn] : '',
+    stressColumn >= 0 ? row[stressColumn] : null
   )).filter(Boolean);
 }
 
 function textToWords(text) {
   const words = [];
+  const delimitedRows = [];
+
   for (const rawLine of text.split(/\r?\n/)) {
     const line = rawLine.trim().replace(/^\d+[.)、]\s*/, '');
     if (!line) continue;
 
     if (/[\t|]/.test(line)) {
       const cells = line.split(/[\t|]/).map(value => value.trim());
-      const word = normalizeRow(cells[0], cells[1], cells[2], cells[3], cells[4]);
-      if (word) words.push(word);
+      delimitedRows.push(cells);
       continue;
     }
 
@@ -76,7 +102,8 @@ function textToWords(text) {
       if (word) words.push(word);
     }
   }
-  return words;
+
+  return [...words, ...rowsToWords(delimitedRows)];
 }
 
 async function spreadsheetToWords(file) {
@@ -103,7 +130,7 @@ function jsonToWords(parsed) {
     if (!item || typeof item !== 'object') return null;
     const meaning = typeof item.meaning === 'string' ? item.meaning : (item.meaning?.zh || item.meaning?.ja || '');
     const tip = typeof item.tip === 'string' ? item.tip : (item.tip?.zh || item.tip?.ja || '');
-    const normalized = normalizeRow(item.word, meaning, item.phonetic, item.example, tip);
+    const normalized = normalizeRow(item.word, meaning, item.phonetic, item.example, tip, item.syllables, item.stressIndex);
     if (!normalized) return null;
     normalized.meaning = item.meaning && typeof item.meaning === 'object' ? item.meaning : normalized.meaning;
     normalized.tip = item.tip && typeof item.tip === 'object' ? item.tip : normalized.tip;

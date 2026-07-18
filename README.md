@@ -21,11 +21,13 @@ EchoSpell 是一款面向中文和日文用户的英语听音拼写练习工具�
 ### 功能
 
 - 浏览器英语发音，支持正常和慢速播放
+- 慢速和音节提示使用独立开关，开启状态会高亮显示
 - 输入单词后立即检查拼写
 - 练习模式高亮漏写或写错的字母
 - 学习模式显示浅色拼写提示，并实时标红输入错误的字母
 - 中文与日文界面切换
 - 中文、日文释义和记忆提示
+- 可选音节提示；内置四级词库已补充音节和主重音，用户导入词库也可提供音节数据
 - 英语音标与例句
 - 自动保存错词并集中复习，错词练习中可一键回到词库练习
 - 学习 / 练习双模式：学习模式照写并自动进入下一词，练习模式独立拼写并纠错
@@ -63,11 +65,13 @@ EchoSpell は、英単語を「読める・聞き取れるのに、正しく書�
 ### 主な機能
 
 - ブラウザによる英語音声の通常・低速再生
+- 低速再生と音節ヒントは独立したスイッチで切り替え
 - 入力したスペルをすぐにチェック
 - 練習モードで抜けた文字や間違えた文字をハイライト表示
 - 学習モードで薄いスペル見本を表示し、入力ミスをリアルタイムで赤く表示
 - 中国語・日本語インターフェースの切り替え
 - 中国語・日本語の意味と覚え方
+- 任意の音節ヒント。内蔵 CET-4 単語帳には音節と主アクセントを追加済みで、読み込み単語帳でも利用可能
 - 英語の発音記号と例文
 - 間違えた単語を自動保存して復習、苦手練習から単語帳練習へすぐ戻れる
 - 学習 / 練習モード：学習では見本を写して自動で次へ、練習では自力でスペルを確認
@@ -105,11 +109,13 @@ The learning loop is intentionally simple:
 ### Features
 
 - Normal and slow English pronunciation using browser speech synthesis
+- Separate switches for slow playback and syllable hints
 - Immediate spelling feedback
 - Highlights missing and incorrect letters in Practice mode
 - Shows a pale spelling guide in Learn mode and marks wrong typed letters in red
 - Chinese and Japanese interface switcher
 - Bilingual meanings and memory tips
+- Optional syllable hints; the built-in CET-4 list includes syllables and primary stress, and imported dictionaries can provide them too
 - English phonetics and example sentences
 - Automatic mistake list, focused review, and a quick return to regular dictionary practice
 - Learn / Practice modes: guided copying with auto-advance or independent spelling checks
@@ -144,11 +150,11 @@ npm run build
 
 ## Import format · 导入格式 · インポート形式
 
-EchoSpell includes the cleaned CET-4 high-frequency dictionary in `src/data/cet4-high-frequency.json`. Users can also import JSON, CSV, TSV, TXT, Excel, or DOCX dictionaries from the page.
+EchoSpell includes the cleaned CET-4 high-frequency dictionary in `src/data/cet4-high-frequency.json`, with Chinese/Japanese meanings, spelling syllables, and primary stress indexes. Users can also import JSON, CSV, TSV, TXT, Excel, or DOCX dictionaries from the page.
 
-EchoSpell 已内置清洗后的四级高频词库 `src/data/cet4-high-frequency.json`，也支持从页面导入 JSON、CSV、TSV、TXT、Excel 或 DOCX 词库。旧版 `.doc` 请先另存为 `.docx`。
+EchoSpell 已内置清洗后的四级高频词库 `src/data/cet4-high-frequency.json`，包含中文/日文释义、拼写音节和主重音索引；也支持从页面导入 JSON、CSV、TSV、TXT、Excel 或 DOCX 词库。旧版 `.doc` 请先另存为 `.docx`。
 
-EchoSpell には整理済みの中国大学英語四級頻出単語帳 `src/data/cet4-high-frequency.json` が含まれています。JSON、CSV、TSV、TXT、Excel、DOCX を読み込めます。旧形式の `.doc` は `.docx` に変換してください。
+EchoSpell には整理済みの中国大学英語四級頻出単語帳 `src/data/cet4-high-frequency.json` が含まれており、中国語/日本語の意味、スペリング音節、主アクセント位置を収録しています。JSON、CSV、TSV、TXT、Excel、DOCX を読み込めます。旧形式の `.doc` は `.docx` に変換してください。
 
 ```json
 {
@@ -160,6 +166,8 @@ EchoSpell には整理済みの中国大学英語四級頻出単語帳 `src/data
     {
       "word": "environment",
       "phonetic": "/ɪnˈvaɪrənmənt/",
+      "syllables": ["en", "vi", "ron", "ment"],
+      "stressIndex": 1,
       "meaning": {
         "zh": "环境",
         "ja": "環境"
@@ -174,11 +182,17 @@ EchoSpell には整理済みの中国大学英語四級頻出単語帳 `src/data
 }
 ```
 
-Only `word` is required. `meaning`, `phonetic`, `example`, and `tip` are optional. An array such as `["apple", "banana"]` is also accepted.
+Only `word` is required. `meaning`, `phonetic`, `syllables`, `stressIndex`, `example`, and `tip` are optional. An array such as `["apple", "banana"]` is also accepted.
 
-只有 `word` 是必填字段；其他字段均可省略。也可以直接导入 `["apple", "banana"]` 这样的数组。
+只有 `word` 是必填字段；`meaning`、`phonetic`、`syllables`、`stressIndex`、`example`、`tip` 均可省略。也可以直接导入 `["apple", "banana"]` 这样的数组。
 
-必須項目は `word` のみです。ほかの項目は省略できます。`["apple", "banana"]` のような配列も読み込めます。
+必須項目は `word` のみです。`meaning`、`phonetic`、`syllables`、`stressIndex`、`example`、`tip` は省略できます。`["apple", "banana"]` のような配列も読み込めます。
+
+`syllables` may be an array or a string such as `"en-vi-ron-ment"`. EchoSpell does not automatically guess syllables from spelling; imported syllable and stress data should be reviewed by the user.
+
+`syllables` 可以是数组，也可以是 `"en-vi-ron-ment"` 这样的字符串。EchoSpell 不会仅根据拼写自动猜测音节；用户导入的音节和重音数据需要自行核对。
+
+`syllables` は配列でも、`"en-vi-ron-ment"` のような文字列でも構いません。EchoSpell はスペルだけから音節を自動推測しません。読み込んだ音節・アクセント情報はユーザー自身で確認してください。
 
 > Imported dictionaries are user-provided and are not verified by EchoSpell. Spelling, meanings, and formatting should be reviewed by the user.
 >
