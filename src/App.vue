@@ -117,9 +117,7 @@
     <footer class="site-footer">
       <a href="https://github.com/RexKing624/echo-spell" target="_blank" rel="noreferrer">GitHub</a>
       <span aria-hidden="true">·</span>
-      <a href="https://xergnik.com" target="_blank" rel="noreferrer">xergnik.com</a>
-      <span aria-hidden="true">·</span>
-      <span>{{ t.footerLocation }}</span>
+      <a href="https://xergnik.com/" target="_blank" rel="noreferrer">© 2026 XER_GNIK</a>
     </footer>
   </div>
 </template>
